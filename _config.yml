@@ -80,7 +80,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/img/avatar.jpg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -161,6 +161,10 @@ defaults:
       path: assets/img/favicons
     values:
       swcache: true
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
   - scope:
       path: assets/js/dist
     values:
