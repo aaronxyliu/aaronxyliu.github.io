@@ -7,7 +7,7 @@ order: 4
 
 ## Xinyue Liu (刘心悦)
 
-I'm currently an Ph.D. student advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, Department of Computer Science and Engineering. My research interest focus on software engineering and programming language. More specificly, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of the language WebAssembly, the future of the web.
+I'm currently an Ph.D. student advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, Department of Computer Science and Engineering. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of the language WebAssembly — the future of the web.
 
 You can contact me through the email: xliu234@buffalo.edu.
 
