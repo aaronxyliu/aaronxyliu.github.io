@@ -20,7 +20,7 @@ timezone: America/New_York
 
 title: Xinyue Liu's Blog # the main title
 
-tagline: Ph.D. students interested in software engineering # it will display as the sub-title
+tagline: Record what I love # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   This is my home lab.
