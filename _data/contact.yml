@@ -10,9 +10,9 @@
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-- type: google
-  icon: "fab fa-google"
-  url: https://scholar.google.com/citations?user=k1eGsbUAAAAJ&hl
+# - type: google
+#   icon: "fab fa-google"
+#   url: https://scholar.google.com/citations?user=k1eGsbUAAAAJ&hl
 
 # - type: rss
 #   icon: "fas fa-rss"
