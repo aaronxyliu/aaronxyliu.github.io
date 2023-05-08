@@ -1,7 +1,7 @@
 ---
 title: 手把手教你设置双屏幕——从理论到实践
 date: 2020-11-18 17:55:03 -500
-categories: [environment]
+categories: [Environment]
 tags: [linux, lang-zh]
 ---
 

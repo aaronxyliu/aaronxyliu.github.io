@@ -1,7 +1,7 @@
 ---
 title: Selenium Source Code Analysis
 date: 2022-04-05 12:00:00 -500
-categories: [web testing]
+categories: [Web Testing]
 tags: [selenium, web, lang-en]
 ---
 
