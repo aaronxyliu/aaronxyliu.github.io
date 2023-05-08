@@ -89,7 +89,7 @@ $> sudo apt install python-pip
 $> sudo apt install python3-venv python3-pip
 ```
 
-其中的 `python3-venv` 为 Python3 的虚拟环境搭建工具。Linux 各个发行版安装 pip 的方法可以查阅官方的 [pip 安装文档](packaging.python.org/guides/installing-using-linux-tools)。有了pip，我们就能为 Python 安装我们需要的库了，例如常用的数学函数库NumPy。
+其中的 `python3-venv` 为 Python3 的虚拟环境搭建工具。Linux 各个发行版安装 pip 的方法可以查阅官方的 [pip 安装文档](https://packaging.python.org/guides/installing-using-linux-tools)。有了pip，我们就能为 Python 安装我们需要的库了，例如常用的数学函数库NumPy。
 
 ```bash
 # Python 2:
@@ -160,14 +160,14 @@ $> mysql --user=<user_name> --password <db_name>
 Enter password: <your_password>
 ```
 
-- 更多的详细内容可以查阅[MySQL 官方文档](dev.mysql.com/doc/refman/8.0/en/)。  
+- 更多的详细内容可以查阅[MySQL 官方文档](https://dev.mysql.com/doc/refman/8.0/en/)。  
   <br/>
 
 ## 配置 Node.js 和它的伙伴们
 
 Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，使我们能够在非浏览器环境下运行 javascript 程序。下面是在 Deepin 上下载和配置 Node.js 环境的具体步骤。
 
-1. 首先，从[Node.js 官网](nodejs.org)上下载 Node.js 的安装包，网站会自动检测你的操作系统，并提供对应的安装包下载。切记<font color=orange>不要</font>使用 apt-get 下载 node 或者 npm，其下载的版本过低，后续使用中会出现诸多问题，一定要从官网上下载！笔者下载的版本为`12.19.0 LTS`，安装包为[node-v12.19.0-linux-x64.tar.xz](nodejs.org/dist/v12.19.0/node-v12.19.0-linux-x64.tar.xz)。下载完成后，将安装包解压到你想安装 Node.js 的任意目录下。一般会解压到`/usr/local/nodejs`目录下。
+1. 首先，从[Node.js 官网](https://nodejs.org)上下载 Node.js 的安装包，网站会自动检测你的操作系统，并提供对应的安装包下载。切记<font color=orange>不要</font>使用 apt-get 下载 node 或者 npm，其下载的版本过低，后续使用中会出现诸多问题，一定要从官网上下载！笔者下载的版本为`12.19.0 LTS`，安装包为[node-v12.19.0-linux-x64.tar.xz](https://nodejs.org/dist/v12.19.0/node-v12.19.0-linux-x64.tar.xz)。下载完成后，将安装包解压到你想安装 Node.js 的任意目录下。一般会解压到`/usr/local/nodejs`目录下。
 
 ```bash
 $> cd /usr/local
