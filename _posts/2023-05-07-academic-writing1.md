@@ -34,7 +34,7 @@ What differentiates practical and conceptual problems is the nature of those con
 
 |                          | Practical Problem                                            | Conceptual Problem                                           |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Condition                | Any state of affairs in the world<br />that troubles you or, better, <br />your readers. | some versions of not knowing<br />or understanding something. |
+| Condition                | Any state of affairs in the world<br />that troubles you or, better, <br />your readers. | Some versions of not knowing<br />or understanding something. |
 | Costs/<br />Consequences | Some tangible effects we don't<br />like: inconvenience, expense,<br />pain, even death. | No cost but consequence — a kind<br />of ignorance. If we haven't answered<br />this question, we can't answer another<br />more important one. |
 
 In short, practical problems concern what we should *do*; conceptual problems concern what we should *think*. Practical problems are most common in the professional world; conceptual problems are msot common in academe.
@@ -46,7 +46,7 @@ We call research *pure* when it addresses a conceptual problem that does not hav
 
 Applied research is common in academic fields such as business, engineering, and medicine and in companies and government agencies that do research to understand what must be known before they can solve a problem.
 
-Most researchers may be uneasy with pure research because the consequence of a conceptual problem — not knowing something — seems so abstract. Since they are not yet part of a community that cares deeply about understanding part of the world, they feel that their findings aren't good enough. So they try toshow the importance of their conceptual answer by cobbling onto it an implausible practical use.
+Most researchers may be uneasy with pure research because the consequence of a conceptual problem — not knowing something — seems so abstract. Since they are not yet part of a community that cares deeply about understanding part of the world, they feel that their findings aren't good enough. So they try to show the importance of their conceptual answer by cobbling onto it an implausible practical use.
 
 So, during your research progress, resist the urge to turn a conceptual problem into a practical one. You are unlikely to solve any genuine practical problem in a course project. And in any case, **most academic researchers see their mission not as fixing the problems of the world but as understanding them better** (which may or may not lead to fixing them). 
 
