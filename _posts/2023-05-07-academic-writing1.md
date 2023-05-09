@@ -1,5 +1,5 @@
 ---
-title: Academic Writing I — Thnking about the Research
+title: Academic Writing I — Thinking about the Research
 date: 2023-05-07 16:00:00 +500
 categories: [Writing]
 tags: [note, lang-en]

@@ -105,6 +105,13 @@ In most papers, use abbrevations only sparingly in text because they can make yo
 
 Notice that abbreviations are not normally italicized.
 
+Here are some common-used abbreviations in papers.
+
+> e.g.   ("exampli gratia", a Latin phrase that means "for example")  
+> et al.  (Latin term "et alia", which means "and others")  
+> etc.    (Latin term "et cetera", which means "and similar things")  
+> i.e.    (Latin term "id est", which means "that is") 
+
 ### Personal Names
 
 In general, do not abbreviate a person's first or last name. Once you have used a full name in text, use just the person's **last** name in subsequent references.
