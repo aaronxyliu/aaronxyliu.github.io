@@ -30,4 +30,7 @@ You can contact me through the email: xliu234@buffalo.edu.
 
 ## Publications
 
-Please refer to blogs under the **publication** category.
+- **X. Liu**, Yanhui Li , “Is Bigger Data Better for Defect Prediction: Examining the Impact of Data Size on Supervised and Unsupervised Defect Prediction,” 12 pages, Sep. 2019, WISA 2019
+
+- A. Romano, **X. Liu**, Y. Kwon, W. Wang, "An Empirical Study of Bugs in WebAssembly Compilers," 2021 36th IEEE/ACM
+International Conference on Automated Software Engineering (ASE), 2021, pp. 42-54, doi: 10.1109/ASE51524.2021.9678776. (Acceptance: 19.2%, 82/427)
