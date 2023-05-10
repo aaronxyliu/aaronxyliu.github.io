@@ -34,3 +34,7 @@ You can contact me through the email: xliu234@buffalo.edu.
 
 - A. Romano, **X. Liu**, Y. Kwon, W. Wang, "An Empirical Study of Bugs in WebAssembly Compilers," 2021 36th IEEE/ACM
 International Conference on Automated Software Engineering (ASE), 2021, pp. 42-54, doi: 10.1109/ASE51524.2021.9678776. (Acceptance: 19.2%, 82/427)
+
+- Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 2023 45th IEEE/ACM International Conference on Software Engineering (ICSE), 2021. (Acceptance: 26%, 209/796)
+
+
