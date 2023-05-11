@@ -27,14 +27,47 @@ After the first draft, parts of your argument will likely still not stand up to 
 Here are two key questions you can ask to make sure the coherence of the paper body.
 
 1. Do key terms run through your whole paper?
-
-- Circle key terms in the claim as stated in your introduction and conclusion.
-- Cicle those same terms in the body of your paper.
-- Underline other words related to concepts named by those circled terms.
-
+ - Circle key terms in the claim as stated in your introduction and conclusion.
+ - Cicle those same terms in the body of your paper.
+ - Underline other words related to concepts named by those circled terms.  
 If reader don't see at least one of your key terms in most paragraphs, they may think your paper wanders. If you underlined many more words than you circled, be sure that readers will recognize how the underlined words relate to the concepts named in your circled key terms. If readers might miss the connection, change some of those related words to the key terms.
 
 
-2. Is it clear how each section relates to the whole?
+2. Is it clear how each section relates to the whole?  
+ For each section, ask, *What question does this section answer?* If it doesn't help to answer questions whose answers constitue an argument, think about its relevance: does it create a context, explain a background concept or issue, or help readers in some other way? If you can't explain how a section relates to your claim, consider cutting it.
 
-For each section, ask, *What question does this section answer?* If it doesn't help to answer questions whose answers constitue an argument, think about its relevance: does it create a context, explain a background concept or issue, or help readers in some other way? If you can't explain how a section relates to your claim, consider cutting it.
+
+## Revising Sentences
+
+Your final task is to make your writing as understandable as you can for your readers, for it is their judgement of your ideas that matters most. Readable writing, of course, depends on more than clear sentences, but clear sentences will go a long way toward making your writing readable. Sometimes you will know your writing is awkward, especially if you're writing about an unfamiliar and complex topic for intimidating readers. Other times, though, you may overestimate your writing, thinking it clear when your readers won't. Here we offer some advice on how to revise your sentences so that readers will find them clear.
+
+### Focus on First Eight Words
+
+The key to a clearly written sentence is in its first few words. When readers grasp those first eight words easily, they read what follows faster, understand it better, and remember it longer.
+
+#### Get to the Subject of Your Sentence Quickly
+
+Compare these two sentences (subjects are boldfaced):
+
+> In view of claims by researchers on higher education indicating at least one change by most undergraduate students of their major field of study, **first-year students** may need better guidence when they choose a major.
+
+> **Researchers on higher education** claim that most students change their major field of study at least once during their undergraduate career. It that is so, then **first-year students** may need better guidence when they choose a major.
+
+Most reader find the first sentence harder to read, because it makes them work though a 24-word phrase before reach its subject (*first-year students*). In the second sentence, readers immediately start with the subject (*Researchers on higher education*).
+
+#### Put Key Actions in Verbs, Not in Nouns
+
+Verb is the **most** key component to develop a sentence. Readers want to get to a verb quickly, and they also want that verb to express a key action. So avoid using an empty verb such as *have*, *do*, *make*, or *be* to introduce an action buried in an abstract noun. Please make the noun a verb.
+
+Compare these two sentences (verbs are boldfaced):
+
+> During he early years of the First World War, the Great Powers' attempt at enlisting the United States on their side **was met** with failure.
+
+> During he early years of the First World War, the Great Powers **attempted** to **enlist** the United States on their side but **failed**.
+
+In the first sentence, three important actions aren't verbs but nouns: *attempt*, *enlisting*, *failure*. The second sentence seems more direct because it expresses those actions in verbs: *attempted*, *enlist*, *failed*.
+
+
+#### Put Information Familiar to Readers at the Beginning of a Sentence, New Information at the End.
+
+Readers understand a sentence more readily when they grasp its subject easily.
