@@ -5,7 +5,7 @@ categories: [Writing]
 tags: [note, lang-en]
 ---
 
-This article documents some error-prone style details where non-native English speakers tend to make mistaks when writing academic papers.
+This article documents some error-prone style details where non-native English speakers tend to make mistakes when writing academic papers.
 
 ## Spelling
 
