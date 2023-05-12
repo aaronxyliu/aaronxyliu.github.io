@@ -57,7 +57,7 @@ Most reader find the first sentence harder to read, because it makes them work t
 
 #### Put Key Actions in Verbs, Not in Nouns
 
-Verb is the **most** key component to develop a sentence. Readers want to get to a verb quickly, and they also want that verb to express a key action. So avoid using an empty verb such as *have*, *do*, *make*, or *be* to introduce an action buried in an abstract noun. Please make the noun a verb.
+**Verbs make sentences go!** Readers want to get to a verb quickly, and they also want that verb to express a key action. So avoid using an empty verb such as *have*, *do*, *make*, or *be* to introduce an action buried in an abstract noun. Please make the noun a verb.
 
 Compare these two sentences (verbs are boldfaced):
 
@@ -70,4 +70,23 @@ In the first sentence, three important actions aren't verbs but nouns: *attempt*
 
 #### Put Information Familiar to Readers at the Beginning of a Sentence, New Information at the End.
 
-Readers understand a sentence more readily when they grasp its subject easily, and the easiest subject to grasp is not just short and concrete but also *familiar*. This is so-called the "flow" of the paragraph. 
+Readers understand a sentence more readily when they grasp its subject easily, and the easiest subject to grasp is not just short and concrete but also *familiar*. This is so-called the "flow" between sentences. When you introduce a new term, put it at the end of its sentence. Compare these: (new terms are boldfaced)
+
+> **Calcium blockers** can control muscle spasms. **Sarcomeres** are the small units of muscle fibers in which these drugs work. Two **filaments**, one thick and one thin, are in each sarcomere. **The proteins actin and myosin** are contained in the thin filament. When actin and myosin interact, your heart contracts.
+
+> Muscle spasms can be controlled with drugs known as **calcium blockers**. They work in small units of muscle fibers called **sarcomeres**. Each sarcomere has two **filaments**, one thick and one thin. The thin filament contains two proteins, **actin and myosin**. When actin and myosin interact, your hear contracts.
+
+In the second sentence, new terms appear towards the ends of their sentences. No principle of writing is more important than this: **old before new; familiar information introduces unfamiliar information**.
+
+
+
+### Use First-Person Pronouns Appropriately
+
+Insecure writers begin too many sentences with *we think* or *we believe* (or their equivalent, *In our opinion*). Readers assume that you think and believe what you write, so you don't need to say so.
+
+
+### Choose the Right Word
+
+The clever selection of words can make the sentence more vivid, and more interesting to follow. However, it should be noted that many words have mutiple meanings and some are even quite abstract, giving the sentence an unfixed meaning. The uncertainty of meaning makes literature intriguing, yet in academic writing, one needs to avoid expressions that are vague or subjective.
+
+Never use the word *important*. Everybody think their work is important. This word provides no information in academic writing.
