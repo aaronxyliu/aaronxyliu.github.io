@@ -79,7 +79,6 @@ Readers understand a sentence more readily when they grasp its subject easily, a
 In the second sentence, new terms appear towards the ends of their sentences. No principle of writing is more important than this: **old before new; familiar information introduces unfamiliar information**.
 
 
-
 ### Use First-Person Pronouns Appropriately
 
 Insecure writers begin too many sentences with *we think* or *we believe* (or their equivalent, *In our opinion*). Readers assume that you think and believe what you write, so you don't need to say so.
