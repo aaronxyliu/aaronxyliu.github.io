@@ -70,4 +70,4 @@ In the first sentence, three important actions aren't verbs but nouns: *attempt*
 
 #### Put Information Familiar to Readers at the Beginning of a Sentence, New Information at the End.
 
-Readers understand a sentence more readily when they grasp its subject easily, and the easiest subject to grasp is not just short and concrete but also *familiar*. This is so-called the "flow" of the paragraph. This is interesting.
+Readers understand a sentence more readily when they grasp its subject easily, and the easiest subject to grasp is not just short and concrete but also *familiar*. This is so-called the "flow" of the paragraph. 
