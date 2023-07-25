@@ -7,5 +7,5 @@ tags: [lang-en]
 
 ## Glad!!
 
-> The ASE reviews can be found [here]({{ site.url }}/download/#230-ASE-Review.pdf); The raw paper is here [here]({{ site.url }}/download/ase2023-paper230.pdf).
+> The ASE reviews can be found [here]({{ site.url }}/download/230-ASE-Review.pdf); The raw paper is here [here]({{ site.url }}/download/ase2023-paper230.pdf).
 {: .prompt-tip }
