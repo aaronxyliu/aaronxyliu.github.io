@@ -33,10 +33,14 @@ You can contact me through the email: xliu234@buffalo.edu.
 
 - **X. Liu**, Yanhui Li , “Is Bigger Data Better for Defect Prediction: Examining the Impact of Data Size on Supervised and Unsupervised Defect Prediction,” 12 pages, Sep. 2019, WISA 2019
 
-- A. Romano, **X. Liu**, Y. Kwon, W. Wang, "An Empirical Study of Bugs in WebAssembly Compilers," 36th IEEE/ACM International Conference on Automated Software Engineering (ASE 2021). (Acceptance: 19.2%, 82/427)
+- A. Romano, **X. Liu**, Y. Kwon, W. Wang, "An Empirical Study of Bugs in WebAssembly Compilers," 36th IEEE/ACM International Conference on Automated Software Engineering (ASE 2021). (Acceptance: 19.2%, 82/427) [[pdf]]({{ site.url }}/download/Empirical_Study_of_Bugs_in_WebAssembly_Compilers.pdf)
 
-- Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 45th IEEE/ACM International Conference on Software Engineering (ICSE 2021). (Acceptance: 26%, 209/796)
+- Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 45th IEEE/ACM International Conference on Software Engineering (ICSE 2021). (Acceptance: 26%, 209/796) [[pdf]]({{ site.url }}/download/Adhere.pdf)
 
-- **X. Liu**, L. Ziarek, "PTdetector: An Automated JavaScript Front-end Library Detector," 38th IEEE/ACM International Conference on Automated Software Engineering (ASE2023). (Acceptance: 21%, 103/629)
+- **X. Liu**, L. Ziarek, "PTdetector: An Automated JavaScript Front-end Library Detector," 38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023). (Acceptance: 21%, 103/629) [[pdf]]({{ site.url }}/download/PTdetector.pdf) [[review]]({{ site.url }}/download/230-ASE-Review.pdf)
+
+- **X. Liu**, Z. Song, W. Fang, W. Yang, W. Wang, "WEFix: Intelligent Automatic Generation of Explicit Waits for Efficient Web End-to-End Flaky Tests," The Web Conference 2024 (WWW 2024). (Acceptance: 20.2%, 405/2008) [[pdf]]({{ site.url }}/download/www_1888_wefix.pdf) [[review]]({{ site.url }}/download/WEFix-Review.pdf)
+
+- **X. Liu**, L. Ziarek, "PTV: Better Version Detection on JavaScript Library Based on Unique Subtree Mining," 45th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI 2024). [[pdf]]({{ site.url }}/download/PTV.pdf)
 
 
