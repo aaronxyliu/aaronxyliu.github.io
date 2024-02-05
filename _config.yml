@@ -31,8 +31,8 @@ url: "https://aaronxyliu.github.io"
 github:
   username: aaronxyliu # change to your github username
 
-# twitter:
-#   username: twitter_username # change to your twitter username
+twitter:
+  username: aaronxyliu # change to your twitter username
 
 social:
   # Change to your full name.
@@ -41,7 +41,7 @@ social:
   email: xliu234@buffalo.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    # - https://twitter.com/aaronl1u # change to your twitter homepage
+    - https://twitter.com/aaronxyliu # change to your twitter homepage
     - https://github.com/aaronxyliu # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
