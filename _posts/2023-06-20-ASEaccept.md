@@ -1,5 +1,5 @@
 ---
-title: 个人小记——半年产出一作顶会论文 (ASE Acceptance)
+title: First Proud Work of Mine – ASE Acceptance
 date: 2023-07-18 9:35:00 +500
 categories: [Paper]
 tags: [lang-zh]
