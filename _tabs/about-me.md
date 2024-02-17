@@ -39,7 +39,7 @@ You can contact me through the email: xliu234@buffalo.edu.
 
 - **X. Liu**, L. Ziarek, "PTdetector: An Automated JavaScript Front-end Library Detector," 38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023). (Acceptance: 21%, 103/629) [[pdf]]({{ site.url }}/download/PTdetector.pdf) [[review]]({{ site.url }}/download/230-ASE-Review.pdf)
 
-- Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 45th IEEE/ACM International Conference on Software Engineering (ICSE 2021). (Acceptance: 26%, 209/796) [[pdf]]({{ site.url }}/download/Adhere.pdf)
+- Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 45th IEEE/ACM International Conference on Software Engineering (ICSE 2023). (Acceptance: 26%, 209/796) [[pdf]]({{ site.url }}/download/Adhere.pdf)
 
 - A. Romano, **X. Liu**, Y. Kwon, W. Wang, "An Empirical Study of Bugs in WebAssembly Compilers," 36th IEEE/ACM International Conference on Automated Software Engineering (ASE 2021). (Acceptance: 19.2%, 82/427) [[pdf]]({{ site.url }}/download/Empirical_Study_of_Bugs_in_WebAssembly_Compilers.pdf)
 
