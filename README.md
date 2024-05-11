@@ -1,5 +1,7 @@
 # Chirpy Personal Blog
 
+Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+
 Run this to deploy locally.
 ```shell
 bundle exec jekyll serve
