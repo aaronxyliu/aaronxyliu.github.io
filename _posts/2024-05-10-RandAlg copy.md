@@ -38,7 +38,7 @@ So, here comes the magic part, which is crucial in any randomized algorithm - *a
 
 When $$ k $$ equals ten, the success probability is already at least 0.999. Basically, you can choose the value of $$ k $$ by yourself to satisfy the any accuracy requirement.
 
-> This randomized algorithm we disucssed is called **Frievalds' Algorithm**, taking a runtime of $$ O(kn^2) $$ , where $$ k $$ is the numbe r of times the algorithm is executed. It is performed assuming a probabily of failure of less than $$ 2^{-k} $$. [Here]({{ site.url }}/download/RandAlg/Lec_1_Randomized_Algorithms.pdf) provides the formal description of the matrix multiplication verification problem and more intuitive examples.
+> This randomized algorithm we disucssed is called **Frievalds' Algorithm**, taking a runtime of $$ O(kn^2) $$ , where $$ k $$ is the numbe r of times the algorithm is executed. It is performed assuming a probability of failure of less than $$ 2^{-k} $$. [Here]({{ site.url }}/download/RandAlg/Lec_1_Randomized_Algorithms.pdf) provides the formal description of the matrix multiplication verification problem and more intuitive examples.
 {: .prompt-tip }
 
 
