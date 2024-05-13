@@ -10,7 +10,7 @@ tags: [note, lang-en, algorithm]
 
 Randomness is a basic and extremely useful concept in algorithm design. Introducing randomness allows us to deal with some very hard questions. Although we cannot provide an accurate result for these hard ones, probablisitic techniques can help us to give a approximated result, and tell to what extent we can believe the given result is closed to the ground-truth.
 
-## Intuitive Example
+## Intuitive Example - matrix multiplication verification
 
 An intuitive example is the matrix multiplication verification problem. The problem is described as follows: suppose there are three $$ n \times n $$ matrices $$ A,B,C $$ , and we want to determine whether the multiplication of first two matrices equals the third one, i.e., $$ AB=C $$ . A straight-forward strategy is to first calculate the matrix multiplication and do the comparison, which depends on how fast we can multiply two $$ n \times n $$ matrices. Apparently, doing it directly requires $$ O(n^3) $$ time. (The current fastest algorithm for matrix multiplication runs in $$ O(n^{2.37...}) $$ time.) The question is, can we find a way to do this job more quickly?
 
