@@ -62,7 +62,11 @@ Most concurrent programs are currently written using special library packages or
 
 As a simple example of the contrast among language families, consider calculating the greatest common divisor (GCD) of two integers using [Euclid's algorithm](https://en.wikipedia.org/wiki/Euclidean_algorithm).
 
-The choice among, say, von Neumann, functional, or logic programming for this problem influences not only the appearance of the code, but **how the programmer thinks**. The von Neumann algorithm version of the algorithm is very imperative:
+The choice among, say, von Neumann, functional, or logic programming for this problem influences not only the appearance of the code, but **how the programmer thinks**. 
+
+### The von Neumann Style
+
+The von Neumann algorithm version of the algorithm is very imperative:
 
 > To compute the `gcd` of `a` and `b`, check to see if `a` and `b` are equal. If so, print one of them and stop. Otherwise, replace the larger one by their difference and repeat.
 
@@ -78,6 +82,9 @@ int gcd(int a, int b) {
 }
 ```
 
+
+### Functional Style
+
 In a functional language, the emphasis is on the mathmatical relationship of outputs to the inputs:
 
 > The `gcd` of `a` and `b` is defined to be (1) `a` when `a` and `b` are equal, (2) the `gcd` of `b` and `a - b` when `a > b`, and (3) the `gcd` of `a` and `b - a` when `a < b`. To compute the `gcd` of a given pair of numbers, expand and simplify this definition until it terminates.
@@ -90,6 +97,9 @@ let rec gcd a b =
     else if a > b then gcd b (a - b)
          else gcd a (b - a)
 ```
+
+
+### Logic Style
 
 In a logic language, the programmer specifies a set of axioms and proof rules that allows the system to find desired values:
 
