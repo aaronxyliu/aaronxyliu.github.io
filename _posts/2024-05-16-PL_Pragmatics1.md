@@ -6,23 +6,23 @@ categories: [Theory]
 tags: [note, lang-en, PL]
 ---
 
-Why there are so many programming languages in the world? What's the art behind their miscellaneous designs? 
+Why are there so many programming languages in the world? What's the art behind their miscellaneous designs? 
 
-Today there are thousands of high-level programming languages, and new ones continue to emerge. These languages belong to different categories and no single factor determines which category is better than others. In this article, we will go through the design ideas behind different languages and try to reach a landscape of programming languages.
+Nowadays, there are thousands of high-level programming languages, and new ones continue to emerge. These languages belong to different categories and no single factor determines which category is better than others. In this article, we will go through the design ideas behind different languages and try to reach a landscape of programming languages.
 
 
 ## The Programming Language Spectrum
 
-The many existing languages can be classified into families based on their model of computation. Following table shows a common set of families. The top-level division distinguishes between **declarative** languages, in which the focus is on **what** the computer is to do, and the **imperative** languages, in which the focus is on **how** the computer should do it.
+The many existing languages can be classified into families based on their model of computation. Following list shows a common set of families. The top-level division distinguishes between **declarative** languages, in which the focus is on **what** the computer is to do, and the **imperative** languages, in which the focus is on **how** the computer should do it.
 
-> - **declarative**
->   - **functional** (Lisp/Scheme, ML/OCaml, Haskell)
->   - **dataflow** (Id, Val)
->   - **logic, constraint-based** (Prolog, spreadsheets, SQL)
-> - **imperative**
->   - **von Neumann** (C, Ada, Fortran)
->   - **object-oriented** (C++, Java, Rust)
->   - **scripting** (Perl, Python, JavaScript)
+ - **declarative**
+   - **functional** (Lisp/Scheme, ML/OCaml, Haskell)
+   - **dataflow** (Id, Val)
+   - **logic, constraint-based** (Prolog, spreadsheets, SQL)
+ - **imperative**
+   - **von Neumann** (C, Ada, Fortran)
+   - **object-oriented** (C++, Java, Rust)
+   - **scripting** (Perl, Python, JavaScript)
 
 > Note that the programming languages categories are fuzzy, and open to debate. In particular, it is possible for a functional language to be object-oriented, and many authors do not consider functional programming to be declarative.
 {: .prompt-tip }
