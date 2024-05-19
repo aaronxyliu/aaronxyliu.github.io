@@ -1,7 +1,7 @@
 ---
 title: The Difference in Common Usage between JavaScript and Python
 date: 2023-02-20 14:00:00 -500
-categories: [Programming Language]
+categories: [Technique, Coding]
 tags: [javascript, python, lang-en]
 ---
 

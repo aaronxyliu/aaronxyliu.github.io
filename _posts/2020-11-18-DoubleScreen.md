@@ -1,7 +1,7 @@
 ---
 title: Linux 设置双屏幕
 date: 2020-11-18 17:55:03 -500
-categories: [Environment]
+categories: [Technique, Environment Setting]
 tags: [linux, lang-zh]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: First Proud Work of Mine – ASE Acceptance
 date: 2023-07-18 9:35:00 +500
-categories: [Paper]
+categories: [Publication]
 tags: [lang-zh]
 ---
 

@@ -2,7 +2,7 @@
 title: Programming Language Pragmatics
 date: 2024-05-16 22:10:00 +500
 math: true
-categories: [Theory]
+categories: [Theory, Programming Language]
 tags: [note, lang-en, PL]
 ---
 

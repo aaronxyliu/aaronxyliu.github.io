@@ -1,7 +1,7 @@
 ---
 title: Deepin 开发环境配置
 date: 2020-11-19 10:30:00 -500
-categories: [Environment]
+categories: [Technique, Environment Setting]
 tags: [linux, lang-zh]
 ---
 
