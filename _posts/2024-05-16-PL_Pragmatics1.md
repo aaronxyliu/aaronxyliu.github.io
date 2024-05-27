@@ -37,7 +37,7 @@ Within the declarative and imperative families, there are several important subf
 
 - **Funcional Languages** employ a computational model based on the recursive definition of functions. They take their inspiration from the **lambda calculus**, a formal computational model developed by Alonzo Church in the 1930s. In essence, a program is considered a function from inputs to outputs, defined in terms of simpler functions through a process of refinement. Languages in this category include Lisp, ML/OCaml, and Haskell.
 
-> If you want to have a comprehensive understanding of **lambda calculus**, the book [*Foundations for Programming Languages* by John C. Mitchell](https://softwarefoundations.cis.upenn.edu/plf-current/index.html) is one you must read.
+> If you want to have a comprehensive understanding of **lambda calculus**, the book *Types and Programming Languages* by Benjamin C. Pierce is recommended for a beginner.
 {: .prompt-tip }
 
 - **Dataflow Languages** model computations as the flow of information (*tokens*) among primitive functional *nodes*. They provide an inherently parallel model: nodes are triggered by the arrival of input tokens, and can operate concurrently. Id and Val are examples of dataflow languages. Sisal, a descendant of Val, is more often described as a functional language.
