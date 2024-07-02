@@ -1,12 +1,12 @@
 ---
-title: Easy Foundations for Programming Languages IX — Henkin Models
-date: 2024-06-27 11:15:00 +500
+title: Henkin Models (Denotational Semantics for Typed Lambda Calculus)
+date: 2024-06-28 11:15:00 +500
 math: true
 categories: [Theory, Programming Language]
 tags: [note, lang-en, PL]
 ---
 
-In this article, let us check out the denotational semantics of typed lambda calculus, which uses models to express the meaning of terms.
+<!-- In this article, let us check out the denotational semantics of typed lambda calculus, which uses models to express the meaning of terms. -->
 
 For most logical systems, a **model** provides a mechanism for giving mathematical meaning to each well-formed expression, in sufficient detail to determine whether any formula of the logic is true. For logic with variables, it is common to separate the assignment of values to variables from the general notion of model.
 
@@ -24,7 +24,7 @@ What makes the model theoryof typed lambda calculus complicated is that we need 
 
 There are several equivalent definitions of "general models," which we will call **Henkin models** after [*Completeness in the theory of types*, L Henkin]({{ site.url }}/download/PL/Henkin.pdf). The definition we use has three parts. We first define typed applicative structures, and then specify two additional conditions that applicative structures must have to be models.
 
-> This article is optional to read. Skipping will not influence the comprehension of later articles.
+> Readers should read [Easy Foundations for Programming Languages VII — Simply-Typed Lambda Calculus]({{ site.url }}/posts/easy_PL7/) before this article to avoid encountering unknown concepts.
 {: .prompt-info }
 
 ## Applicative Structures, Extensionality and Frames
