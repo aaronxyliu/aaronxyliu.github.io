@@ -14,6 +14,8 @@ You can contact me through the email: xliu234@buffalo.edu.
 > A printable CV of mine can be found [here]({{ site.url }}/download/Xinyue_CV_en.pdf).
 {: .prompt-tip }
 
+If you are a new Ph.D. student who wants to explore the path on software engineering and programming language theory, you may be interested in reading my blog series [**Randomized Algorithm**]({{ site.url }}/categories/randomized-algorithm/) and [**Easy Foundations for Programming Languages**]({{ site.url }}/categories/programming-language/).
+
 ## Education
 
 - *2016 Fall - 2020 Summer:*  Nanjing University (**NJU** 南京大学), Bachelor
