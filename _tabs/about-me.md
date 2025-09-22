@@ -7,9 +7,11 @@ order: 4
 
 ## Xinyue Liu (刘心悦)
 
-I'm currently an Ph.D. student advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, Department of Computer Science and Engineering. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of a new web language — WebAssembly — the future of the web.
 
-You can contact me through the email: xliu234@buffalo.edu.
+
+I'm currently an assistant professor (弘深青年教师) at Chongqing University (重庆大学), School of Big Data & Software engineering. Before I joined Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of a new web language — WebAssembly — the future of the web.
+
+You can contact me through the email: aaronxyliu@gmail.com.
 
 > A printable CV of mine can be found [here]({{ site.url }}/download/Xinyue_CV_en.pdf).
 {: .prompt-tip }
@@ -19,9 +21,9 @@ If you are a new Ph.D. student who wants to explore the path on software enginee
 ## Education
 
 - *2016 Fall - 2020 Summer:*  Nanjing University (**NJU** 南京大学), Bachelor
-- *2021 Spring - Current:*  University at Buffalo (**UB**), Ph.D.
+- *2021 Spring - 2025 Summer:*  University at Buffalo (**UB**), Ph.D.
 
-## Experience
+<!-- ## Experience
 
 - *2016 Fall - 2018 Summer:* Minister of NJU Phantom Magic Club
 
@@ -31,7 +33,7 @@ If you are a new Ph.D. student who wants to explore the path on software enginee
 
 - *2019 Summer:* Intern gameplay developer at Tencent Timi J5 Studio
 
-- *2021 Spring - 2022 Fall:* Teaching assistant of UB CSE 531: Algorithm Analysis and Design, Prof. Xin (Roger) He
+- *2021 Spring - 2022 Fall:* Teaching assistant of UB CSE 531: Algorithm Analysis and Design, Prof. Xin (Roger) He -->
 
 ## Publications
 
