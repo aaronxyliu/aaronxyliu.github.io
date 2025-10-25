@@ -9,9 +9,9 @@ order: 1
 
 
 
-I'm currently an assistant professor (弘深青年教师) at **Chongqing University** (重庆大学), School of Big Data & Software engineering. Before I joined Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of a new web language — WebAssembly — the future of the web.
+I'm currently an assistant researcher (弘深青年教师) at **Chongqing University** (重庆大学), School of Big Data & Software engineering. Before I joined Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of a new web language — WebAssembly — the future of the web.
 
-You can contact me through the email: aaronxyliu@gmail.com.
+You can contact me through the email: aaronxyliu@cqu.edu.cn.
 
 > A printable CV of mine can be found [here]({{ site.url }}/download/Xinyue_CV_en.pdf).
 {: .prompt-tip }
