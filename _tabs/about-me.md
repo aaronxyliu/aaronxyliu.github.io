@@ -9,7 +9,7 @@ order: 1
 
 
 
-I'm currently an assistant researcher (弘深青年教师) at **Chongqing University** (重庆大学), School of Big Data & Software engineering. Before I joined Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of a new web language — WebAssembly — the future of the web.
+I'm currently a research assistant (弘深青年教师) at **Chongqing University** (重庆大学), School of Big Data & Software engineering. Before I joined Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. My research interest focus on software engineering and programming language. More specifically, I'm working on automated testing and detection of web applications. Besides, I am also interested in the validation and application of a new web language — WebAssembly — the future of the web.
 
 You can contact me through the email: aaronxyliu@cqu.edu.cn.
 
@@ -39,9 +39,9 @@ If you are a new Ph.D. student who wants to explore the path on software enginee
 
 - **X. Liu**, H. Cai, L. Ziarek, “PTV: Scalable Version Detection of Web Libraries and its Security Application,” the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026). (Acceptance: 24.2%, 160/660) [[pdf]]({{ site.url }}/download/ptv-ready.pdf) [[supplementary material]]({{ site.url }}/download/ptv-proof.pdf)
 
-- **X. Liu**, Z. Song, W. Fang, W. Yang, W. Wang, "WEFix: Intelligent Automatic Generation of Explicit Waits for Efficient Web End-to-End Flaky Tests," The Web Conference 2024 (WWW 2024). (Acceptance: 20.2%, 405/2008) [[pdf]]({{ site.url }}/download/wefix.pdf) [[review]]({{ site.url }}/download/WEFix-Review.pdf)
+- **X. Liu**, Z. Song, W. Fang, W. Yang, W. Wang, "WEFix: Intelligent Automatic Generation of Explicit Waits for Efficient Web End-to-End Flaky Tests," The Web Conference 2024 (WWW 2024). (Acceptance: 20.2%, 405/2008) [[pdf]]({{ site.url }}/download/wefix.pdf) 
 
-- **X. Liu**, L. Ziarek, "PTdetector: An Automated JavaScript Front-end Library Detector," 38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023). (Acceptance: 21%, 103/629) [[pdf]]({{ site.url }}/download/PTdetector.pdf) [[review]]({{ site.url }}/download/230-ASE-Review.pdf)
+- **X. Liu**, L. Ziarek, "PTdetector: An Automated JavaScript Front-end Library Detector," 38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023). (Acceptance: 21%, 103/629) [[pdf]]({{ site.url }}/download/PTdetector.pdf) 
 
 - Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 45th IEEE/ACM International Conference on Software Engineering (ICSE 2023). (Acceptance: 26%, 209/796) [[pdf]]({{ site.url }}/download/Adhere.pdf)
 
