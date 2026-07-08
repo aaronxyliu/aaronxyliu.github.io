@@ -1,6 +1,6 @@
 ---
 title: VMware Fusion Ubuntu 虚拟机通过 Mac VPN 访问外网教程
-date: 2026-07-08 20:31:00 +500
+date: 2026-07-08 08:31:00 +500
 math: true
 categories: [Technique]
 tags: [note, linux]
