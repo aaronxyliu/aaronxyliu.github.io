@@ -18,6 +18,7 @@ tags: [note, linux]
 * Mac 代理软件：FlyingBird
 * 可用代理端口：`7892`
 
+
 ## 1. 问题背景
 
 在 VMware Fusion 中，即使网络模式选择了：
