@@ -2,12 +2,10 @@
 # the default layout is 'page'
 title: About Me
 icon: fas fa-info-circle
-order: 1
+order: 4
 ---
 
 ## Xinyue Liu (刘心悦)
-
-
 
 I'm currently an assistant professor (弘深青年教师) at **Chongqing University** (重庆大学), School of Big Data & Software engineering. Before joining Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. 
 
@@ -19,6 +17,7 @@ I welcome opportunities for academic collaboration, student advising, and indust
 
 If you are a new Ph.D. student who wants to explore the path on software engineering and programming language theory, you may be interested in reading my blog series:
 - [**软件工程形式化入门**  (6 blogs)]({{ site.url }}/categories/软工形式化入门/).
+- [**Academic Writing**  (3 blogs)]({{ site.url }}/categories/writing/).
 - [**Randomized Algorithm**  (12 blogs)]({{ site.url }}/categories/randomized-algorithm/)
 - [**Easy Foundations for Programming Languages**  (11 blogs)]({{ site.url }}/categories/programming-language/).
 - [**Denotational Semantics of Typed Lambda Calculus**  (5 blogs)]({{ site.url }}/categories/denotational-semantics/).
