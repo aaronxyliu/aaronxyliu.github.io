@@ -17,7 +17,12 @@ I welcome opportunities for academic collaboration, student advising, and indust
 > A printable CV of mine can be found [here]({{ site.url }}/download/Xinyue_CV_en.pdf).
 {: .prompt-tip }
 
-If you are a new Ph.D. student who wants to explore the path on software engineering and programming language theory, you may be interested in reading my blog series [**Randomized Algorithm**]({{ site.url }}/categories/randomized-algorithm/) and [**Easy Foundations for Programming Languages**]({{ site.url }}/categories/programming-language/).
+If you are a new Ph.D. student who wants to explore the path on software engineering and programming language theory, you may be interested in reading my blog series:
+- [**软件工程形式化入门** (2 blogs, updating)]({{ site.url }}/categories/软工形式化入门/).
+- [**Randomized Algorithm** (12 blogs, finished)]({{ site.url }}/categories/randomized-algorithm/)
+- [**Easy Foundations for Programming Languages** (11 blogs, finished)]({{ site.url }}/categories/programming-language/).
+- [**Denotational Semantics of Typed Lambda Calculus** (5 blogs, finished)]({{ site.url }}/categories/denotational-semantics/).
+
 
 ## Experience
 

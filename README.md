@@ -1,26 +1,64 @@
 # Chirpy Personal Blog
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed. Then run:
+基于 [Jekyll](https://jekyllrb.com/) 和 [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) 构建的个人博客。
+
+## 环境配置
+
+项目使用 `.ruby-version` 固定 Ruby 3.3.12。建议使用 `rbenv` 管理 Ruby，避免系统 Ruby 或 Homebrew Ruby 4 与旧版 `html-proofer` 冲突。
+
+### macOS
+
+安装并初始化 `rbenv`：
 
 ```shell
-bundle
+brew install rbenv ruby-build
+rbenv init
+exec zsh -l
 ```
 
-Run this to deploy locally.
-```shell
-bundle exec jekyll serve
-```
-
-For Mac M1 / M2, run this may help.
+进入项目目录后安装项目指定的 Ruby 和依赖：
 
 ```shell
-bundle lock --add-platform x86_64-linux
+rbenv install -s "$(cat .ruby-version)"
+ruby -v
+bundle install
 ```
 
-Also see this [link](https://github.com/cotes2020/jekyll-theme-chirpy/issues/628).
+`ruby -v` 应显示 Ruby 3.3.12。首次执行 `bundle install` 会按照 `Gemfile.lock` 安装已经验证过的依赖版本；锁文件也已包含 GitHub Actions 所需的 Linux 平台依赖，无需手动运行 `bundle lock --add-platform`。
 
-You can read this [Chirpy manual](https://chirpy.cotes.page/posts/write-a-new-post/) to learn how to write a new post.
+如果仍然显示 Ruby 4，请检查并重新加载 shell：
 
-[Google search console](https://search.google.com/search-console/about) can be used to make the website open for Google search.
+```shell
+which ruby
+rbenv version
+exec zsh -l
+```
 
+## 本地启动
 
+```shell
+bundle exec jekyll serve --livereload
+```
+
+浏览器访问 <http://127.0.0.1:4000>。修改文章或页面后，Jekyll 会自动重新生成网站并刷新浏览器。
+
+## 构建与检查
+
+执行与 GitHub Actions 一致的生产构建：
+
+```shell
+JEKYLL_ENV=production bundle exec jekyll build -d _site
+```
+
+检查生成页面中的 HTML、内部链接和图片：
+
+```shell
+bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
+```
+
+推送到 `main` 或 `master` 分支后，GitHub Actions 会自动构建并部署 GitHub Pages。
+
+## 写作与收录
+
+- 文章写作方式参见 [Chirpy Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)。
+- 可使用 [Google Search Console](https://search.google.com/search-console/about) 提交网站并查看搜索收录情况。
