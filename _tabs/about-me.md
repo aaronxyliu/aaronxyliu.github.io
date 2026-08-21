@@ -5,64 +5,417 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-## Xinyue Liu (刘心悦)
+<style>
+  .about-hero,
+  .featured-reading,
+  .reading-card,
+  .publication-item {
+    border: 1px solid var(--card-border-color);
+    background: var(--card-bg);
+  }
 
-I'm currently an assistant professor (弘深青年教师) at **Chongqing University** (重庆大学), School of Big Data & Software engineering. Before joining Chongqing University, I was advised by [Lukasz Ziarek](https://cse.buffalo.edu/~lziarek/) at University at Buffalo, USA. 
+  .about-hero {
+    padding: 2rem;
+    margin: 0.5rem 0 2.5rem;
+    border-radius: 14px;
+    background: linear-gradient(135deg, rgba(42, 64, 142, 0.14), var(--card-bg) 62%);
+  }
 
-My research lies at the intersection of Software Engineering and Programming Language Theory. I am currently working on AI-assisted analysis and verification of Web applications, with a particular focus on dependency security in the Web ecosystem. Besides, I am broadly interested in software development and maintenance problems that can be addressed through program analysis techniques.
+  .about-kicker {
+    margin-bottom: 0.55rem;
+    color: var(--link-color);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
 
-I welcome opportunities for academic collaboration, student advising, and industrial cooperation. Contact me through: aaronxyliu@cqu.edu.cn.
-> A printable CV of mine can be found [here]({{ site.url }}/download/Xinyue_CV_en.pdf).
-{: .prompt-tip }
+  .about-hero h2 {
+    margin: 0 0 0.35rem !important;
+    font-size: 2rem;
+    font-weight: 600;
+  }
 
-If you are a new Ph.D. student who wants to explore the path on software engineering and programming language theory, you may be interested in reading my blog series:
-- [**软件工程形式化入门**  (6 blogs)]({{ site.url }}/categories/软工形式化入门/).
-- [**Academic Writing**  (3 blogs)]({{ site.url }}/categories/writing/).
-- [**Randomized Algorithm**  (12 blogs)]({{ site.url }}/categories/randomized-algorithm/)
-- [**Easy Foundations for Programming Languages**  (11 blogs)]({{ site.url }}/categories/programming-language/).
-- [**Denotational Semantics of Typed Lambda Calculus**  (5 blogs)]({{ site.url }}/categories/denotational-semantics/).
+  .about-role {
+    margin-bottom: 1rem;
+    color: var(--text-muted-color);
+    font-size: 1.06rem;
+  }
 
+  .about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin-top: 1.35rem;
+  }
+
+  .post-content .about-actions a {
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--btn-border-color) !important;
+    border-radius: 999px;
+    background: var(--button-bg);
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .post-content .about-actions a:hover {
+    border-color: var(--link-color) !important;
+    color: var(--link-color) !important;
+  }
+
+  .about-email {
+    margin-top: 1.2rem;
+    color: var(--text-muted-color);
+  }
+
+  .research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 1.15rem 0 1.5rem;
+  }
+
+  .research-tags span {
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--tag-border);
+    border-radius: 999px;
+    color: var(--text-muted-color);
+    font-size: 0.86rem;
+  }
+
+  .featured-reading {
+    padding: 1.6rem;
+    margin: 1.3rem 0 1rem;
+    border-left: 4px solid var(--link-color);
+    border-radius: 10px;
+  }
+
+  .reading-label {
+    color: var(--link-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .featured-reading h3,
+  .reading-card h3 {
+    margin: 0.45rem 0 0.65rem !important;
+    font-weight: 600;
+  }
+
+  .featured-reading h3 {
+    font-size: 1.3rem;
+  }
+
+  .featured-reading p,
+  .reading-card p {
+    margin-bottom: 0;
+    color: var(--text-muted-color);
+  }
+
+  .reading-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.92rem;
+  }
+
+  .reading-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .post-content a.reading-card {
+    display: block;
+    min-height: 155px;
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .post-content a.reading-card:hover {
+    border-bottom: 1px solid var(--card-border-color);
+    color: var(--text-color) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px var(--card-box-shadow);
+  }
+
+  .reading-card h3 {
+    font-size: 1.03rem;
+  }
+
+  .reading-count {
+    color: var(--link-color);
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .about-timeline {
+    margin: 1rem 0 2rem 0.25rem;
+    padding-left: 1.35rem;
+    border-left: 2px solid var(--main-border-color);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 0 0 1.45rem 0.35rem;
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline-item::before {
+    position: absolute;
+    top: 0.35rem;
+    left: -1.76rem;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--main-bg);
+    border-radius: 50%;
+    background: var(--link-color);
+    content: '';
+  }
+
+  .timeline-date {
+    display: block;
+    margin-bottom: 0.15rem;
+    color: var(--text-muted-color);
+    font-size: 0.82rem;
+  }
+
+  .timeline-item p {
+    margin: 0.2rem 0 0;
+    color: var(--text-muted-color);
+  }
+
+  .publication-list {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 1rem;
+  }
+
+  .publication-item {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr;
+    gap: 1rem;
+    padding: 1.05rem 1.15rem;
+    border-radius: 9px;
+  }
+
+  .publication-year {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    color: var(--link-color);
+    font-weight: 700;
+  }
+
+  .publication-title {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--heading-color);
+    line-height: 1.45;
+  }
+
+  .publication-meta {
+    margin: 0;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .ccf-badge {
+    display: inline-block;
+    padding: 0.08rem 0.42rem;
+    border-radius: 4px;
+    background: #b85c68;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  .publication-links {
+    margin-top: 0.35rem;
+    font-size: 0.88rem;
+  }
+
+  @media (max-width: 576px) {
+    .about-hero {
+      padding: 1.35rem;
+    }
+
+    .about-hero h2 {
+      font-size: 1.65rem;
+    }
+
+    .reading-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .post-content a.reading-card {
+      min-height: auto;
+    }
+
+    .publication-item {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+  }
+</style>
+
+<div class="about-hero">
+  <div class="about-kicker">SOFTWARE ENGINEERING · PROGRAMMING LANGUAGES</div>
+  <h2 data-toc-skip>Xinyue Liu <small>刘心悦</small></h2>
+  <div class="about-role">Assistant Professor · Chongqing University</div>
+  <p>I am an assistant professor (弘深青年教师) in the School of Big Data &amp; Software Engineering at <strong>Chongqing University (CQU, 重庆大学)</strong>. I am currently a member of the Intelligent Software Engineering research team led by <a href="https://sites.google.com/site/hongyujohn">Hongyu Zhang (张洪宇)</a>.</p>
+  <p>For visitors, my office is on the CQU Huxi Campus: <strong>重庆大学虎溪校区信息技术科研楼 B707</strong>.</p>
+  <p>Before joining CQU, I completed my Ph.D. at the University at Buffalo under the supervision of <a href="https://cse.buffalo.edu/~lziarek/">Lukasz Ziarek</a>.</p>
+  <div class="about-actions">
+    <a href="{{ '/download/Xinyue_CV_en.pdf' | relative_url }}"><i class="fas fa-file-alt fa-fw"></i> Curriculum Vitae</a>
+    <a href="https://github.com/aaronxyliu"><i class="fab fa-github fa-fw"></i> GitHub</a>
+    <a href="https://www.cse.cqu.edu.cn/info/2167/8532.htm"><i class="fas fa-university fa-fw"></i> CQU Homepage</a>
+  </div>
+  <div class="about-email"><strong>Email:</strong> aaronxyliu@cqu.edu.cn</div>
+</div>
+
+## Research
+
+My research lies at the intersection of **Software Engineering** and **Programming Language Theory**. I am currently interested in AI-assisted analysis and verification of Web applications, especially dependency security in the Web ecosystem. More broadly, I study how program analysis can make software development and maintenance more reliable.
+
+<div class="research-tags">
+  <span>Program Analysis</span>
+  <span>Web Security</span>
+  <span>Software Testing</span>
+  <span>Formal Methods</span>
+  <span>AI for Software Engineering</span>
+</div>
+
+I welcome conversations about academic collaboration, student advising, and industrial cooperation. If our interests overlap, feel free to contact me at aaronxyliu@cqu.edu.cn.
+
+## From the Blog · 博客导读
+
+这个博客不仅记录研究与技术笔记，也尝试把程序分析、程序语言理论和科研写作中那些“不容易找到入口”的内容，整理成可以连续阅读的系列。内容主要面向刚进入相关方向的本科生、研究生与软件分析爱好者：不追求一次讲完所有知识，而是希望帮助读者建立继续阅读论文和教材所需要的直觉。
+
+<div class="featured-reading">
+  <div class="reading-label">RECOMMENDED · 中文 · 7 篇</div>
+  <h3 data-toc-skip>软件工程形式化入门</h3>
+  <p>读程序分析论文时，你是不是也常常前面看得很顺，一翻到定义和公式就突然卡住？这个系列就是想帮你迈过这道坎：不用先补一大堆数学，也能慢慢看懂那些符号到底在说什么，读论文时心里更有底；系列另附一篇趣味 <a href="{{ '/posts/Formalization7/' | relative_url }}">形式化历史概述</a>。</p>
+  <div class="reading-links">
+    <a href="{{ '/posts/Formalization1/' | relative_url }}">从第一篇开始 →</a>
+    <a href="{{ '/categories/软工形式化入门/' | relative_url }}">查看完整系列</a>
+  </div>
+</div>
+
+<div class="reading-grid">
+  <a class="reading-card" href="{{ '/categories/programming-language/' | relative_url }}">
+    <span class="reading-count">11 篇 · 入门路线</span>
+    <h3 data-toc-skip>Easy Foundations for Programming Languages</h3>
+    <p>从基础概念进入程序语言理论，适合希望系统补充 PL 基础的读者。</p>
+  </a>
+  <a class="reading-card" href="{{ '/categories/denotational-semantics/' | relative_url }}">
+    <span class="reading-count">5 篇 · 进阶专题</span>
+    <h3 data-toc-skip>Denotational Semantics of Typed Lambda Calculus</h3>
+    <p>围绕类型化 λ 演算的指称语义，进一步理解程序如何映射到数学模型。</p>
+  </a>
+  <a class="reading-card" href="{{ '/categories/randomized-algorithm/' | relative_url }}">
+    <span class="reading-count">12 篇 · 算法基础</span>
+    <h3 data-toc-skip>Randomized Algorithms</h3>
+    <p>从概率工具到经典随机算法，整理分析思路与常见证明方法。</p>
+  </a>
+  <a class="reading-card" href="{{ '/categories/writing/' | relative_url }}">
+    <span class="reading-count">3 篇 · 科研训练</span>
+    <h3 data-toc-skip>Academic Writing</h3>
+    <p>讨论如何思考研究问题、组织论文结构，以及让技术写作更清楚。</p>
+  </a>
+</div>
+
+> 如果你刚开始接触软件分析，可以先读“软件工程形式化入门”，再根据兴趣进入 *Easy Foundations for Programming Languages*。如果已经熟悉基础语义与类型系统，可以直接选择指称语义专题。
+{: .prompt-tip}
 
 ## Experience
 
-- **2016.09 - 2020.06:**  Nanjing University (**NJU** 南京大学), Bachelor
-- **2021.02 - 2025.08:**  University at Buffalo (**UB**), Ph.D.
-- **2025.11 - Now:**  Chongqing University, Assistant Professor
-
-<!-- ## Experience
-
-- *2016 Fall - 2018 Summer:* Minister of NJU Phantom Magic Club
-
-- *2016 Fall - 2018 Summer:* Captain of NJU Volleyball team
-
-- *2016 Fall - 2018 Summer:* NJU student union member
-
-- *2019 Summer:* Intern gameplay developer at Tencent Timi J5 Studio
-
-- *2021 Spring - 2022 Fall:* Teaching assistant of UB CSE 531: Algorithm Analysis and Design, Prof. Xin (Roger) He -->
+<div class="about-timeline">
+  <div class="timeline-item">
+    <span class="timeline-date">2025.11 — Present</span>
+    <strong>Assistant Professor</strong>
+    <p>CQU, Big Data & SE School</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2021.02 — 2025.08</span>
+    <strong>Ph.D. advised by Lukasz Ziarek</strong>
+    <p>UB, Computer Science and Engineering Department, USA</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2016.09 — 2020.06</span>
+    <strong>Undergraduate Study</strong>
+    <p>NJU (南京大学), Computer Science and Technology Department</p>
+  </div>
+</div>
 
 ## Publications
 
-- **X. Liu**, H. Cai, L. Ziarek, “PTV: Scalable Version Detection of Web Libraries and its Security Application,” the 48th IEEE/ACM International Conference on Software Engineering (ICSE 2026). **CCF-A** (Acceptance: 24.2%, 160/660) [[pdf]]({{ site.url }}/download/ptv-ready.pdf) [[supplementary material]]({{ site.url }}/download/ptv-proof.pdf)
+<div class="publication-list">
+  <div class="publication-item">
+    <div class="publication-year">2026 <span class="ccf-badge">CCF-A</span></div>
+    <div>
+      <strong class="publication-title">PTV: Scalable Version Detection of Web Libraries and its Security Application</strong>
+      <p class="publication-meta"><strong>X. Liu</strong>, H. Cai, L. Ziarek · ICSE 2026 · Acceptance: 24.2% (160/660)</p>
+      <div class="publication-links"><a href="{{ '/download/ptv-ready.pdf' | relative_url }}">PDF</a> · <a href="{{ '/download/ptv-proof.pdf' | relative_url }}">Supplementary material</a></div>
+    </div>
+  </div>
 
-- **X. Liu**, Z. Song, W. Fang, W. Yang, W. Wang, "WEFix: Intelligent Automatic Generation of Explicit Waits for Efficient Web End-to-End Flaky Tests," The Web Conference 2024 (WWW 2024). **CCF-A** (Acceptance: 20.2%, 405/2008) [[pdf]]({{ site.url }}/download/wefix.pdf) 
+  <div class="publication-item">
+    <div class="publication-year">2024 <span class="ccf-badge">CCF-A</span></div>
+    <div>
+      <strong class="publication-title">WEFix: Intelligent Automatic Generation of Explicit Waits for Efficient Web End-to-End Flaky Tests</strong>
+      <p class="publication-meta"><strong>X. Liu</strong>, Z. Song, W. Fang, W. Yang, W. Wang · WWW 2024 · Acceptance: 20.2% (405/2008)</p>
+      <div class="publication-links"><a href="{{ '/download/wefix.pdf' | relative_url }}">PDF</a></div>
+    </div>
+  </div>
 
-- **X. Liu**, L. Ziarek, "PTdetector: An Automated JavaScript Front-end Library Detector," 38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023). **CCF-A** (Acceptance: 21%, 103/629) [[pdf]]({{ site.url }}/download/PTdetector.pdf) 
+  <div class="publication-item">
+    <div class="publication-year">2023 <span class="ccf-badge">CCF-A</span></div>
+    <div>
+      <strong class="publication-title">PTdetector: An Automated JavaScript Front-end Library Detector</strong>
+      <p class="publication-meta"><strong>X. Liu</strong>, L. Ziarek · ASE 2023 · Acceptance: 21% (103/629)</p>
+      <div class="publication-links"><a href="{{ '/download/PTdetector.pdf' | relative_url }}">PDF</a></div>
+    </div>
+  </div>
 
-- Y. Yan, Y. Zheng, **X. Liu**, N. Medvidovic, W. Wang, "AdHere: Automated Detection and Repair of Intrusive Ads," 45th IEEE/ACM International Conference on Software Engineering (ICSE 2023). **CCF-A** (Acceptance: 26%, 209/796) [[pdf]]({{ site.url }}/download/Adhere.pdf)
+  <div class="publication-item">
+    <div class="publication-year">2023 <span class="ccf-badge">CCF-A</span></div>
+    <div>
+      <strong class="publication-title">AdHere: Automated Detection and Repair of Intrusive Ads</strong>
+      <p class="publication-meta">Y. Yan, Y. Zheng, <strong>X. Liu</strong>, N. Medvidovic, W. Wang · ICSE 2023 · Acceptance: 26% (209/796)</p>
+      <div class="publication-links"><a href="{{ '/download/Adhere.pdf' | relative_url }}">PDF</a></div>
+    </div>
+  </div>
 
-- A. Romano, **X. Liu**, Y. Kwon, W. Wang, "An Empirical Study of Bugs in WebAssembly Compilers," 36th IEEE/ACM International Conference on Automated Software Engineering (ASE 2021). **CCF-A** (Acceptance: 19.2%, 82/427) [[pdf]]({{ site.url }}/download/Empirical_Study_of_Bugs_in_WebAssembly_Compilers.pdf)
+  <div class="publication-item">
+    <div class="publication-year">2021 <span class="ccf-badge">CCF-A</span></div>
+    <div>
+      <strong class="publication-title">An Empirical Study of Bugs in WebAssembly Compilers</strong>
+      <p class="publication-meta">A. Romano, <strong>X. Liu</strong>, Y. Kwon, W. Wang · ASE 2021 · Acceptance: 19.2% (82/427)</p>
+      <div class="publication-links"><a href="{{ '/download/Empirical_Study_of_Bugs_in_WebAssembly_Compilers.pdf' | relative_url }}">PDF</a></div>
+    </div>
+  </div>
 
-- **X. Liu**, Yanhui Li , “Is Bigger Data Better for Defect Prediction: Examining the Impact of Data Size on Supervised and Unsupervised Defect Prediction,” 12 pages, Sep. 2019, WISA 2019 [[pdf]]({{ site.url }}/download/Is_big_data.pdf)
-
-
-
-
-
-
-
-
-
-
-
-
+  <div class="publication-item">
+    <div class="publication-year">2019</div>
+    <div>
+      <strong class="publication-title">Is Bigger Data Better for Defect Prediction: Examining the Impact of Data Size on Supervised and Unsupervised Defect Prediction</strong>
+      <p class="publication-meta"><strong>X. Liu</strong>, Yanhui Li · WISA 2019</p>
+      <div class="publication-links"><a href="{{ '/download/Is_big_data.pdf' | relative_url }}">PDF</a></div>
+    </div>
+  </div>
+</div>

@@ -14,6 +14,11 @@ tags: [note, lang-zh, SE]
 
 六篇文章会沿着这条阅读路线逐步深入。旅程从集合、映射和程序状态开始，随后进入控制流图（Control-Flow Graph，CFG）和程序语义（program semantics），观察程序怎样执行。当具体状态多到无法穷举时，我们会转向抽象解释（abstract interpretation），用抽象域（abstract domain）、格（lattice）和合并操作（join）保留分析真正需要的信息；然后再用传递函数（transfer function）、工作列表算法（worklist algorithm）和不动点（fixed point）把局部规则连成可以运行的分析器。系列的后半程会讨论可靠性（soundness）、精度（precision）与工程规模之间的取舍，最后回到大语言模型（Large Language Model，LLM）带来的新问题：当模型可以生成代码和修复时，谁来提供可检查的保证？
 
+![一名研究生通过程序对象和规则搭成的桥理解论文中的形式化描述]({{ '/assets/img/2026-08-21/formalization-bridge.webp' | relative_url }}){: width="680" }
+
+_形式化不是横在文字与结论之间的墙，而是一座把程序对象、关系和规则连接起来的桥。_
+{: .text-center}
+
 作为整个系列的起点，本文暂时不追求更复杂的理论，而是先学会辨认公式中的基本对象，理解它们如何组成程序状态，再把一条语义规则还原成自然语言和伪代码。从下面两种常见写法开始：
 
 $$
@@ -294,6 +299,11 @@ Map<Variable, Value>
 
 论文里的状态定义并不是脱离实现的装饰。很多分析器在代码中确实会维护与之相似的数据结构。
 
+![三个变量分别通过箭头映射到三个值，整体组成一个程序状态]({{ '/assets/img/2026-08-21/program-state-mapping.webp' | relative_url }}){: width="560" }
+
+_把每个变量想成一张索引卡：每张卡片指向一个当前值，这些对应关系共同组成一次程序状态快照。_
+{: .text-center}
+
 ### 3.2 箭头、对应关系与状态更新
 
 这两个箭头用途不同：
@@ -353,6 +363,11 @@ $$
 new_state = state.copy()
 new_state[x] = 10
 ```
+
+![两张程序状态卡片前后对比，只有中间一项被更新]({{ '/assets/img/2026-08-21/program-state-update.webp' | relative_url }}){: width="560" }
+
+_状态更新只替换一项映射：新状态中的目标变量获得新值，其他变量保持不变。_
+{: .text-center}
 
 考虑赋值语句：
 
@@ -543,6 +558,11 @@ $$
 ## 五、怎样阅读一段陌生的形式化？
 
 读论文时，最长的规则总是最显眼，但它通常不适合作为起点。下面这套顺序更稳妥。
+
+![阅读者依次辨认对象、理清对象关系，最后理解规则]({{ '/assets/img/2026-08-21/formalization-reading-route.webp' | relative_url }}){: width="680" }
+
+_阅读陌生形式化的顺序：先辨认对象，再追踪它们之间的关系，最后进入真正的计算规则。_
+{: .text-center}
 
 ### 5.1 一套稳定的阅读顺序
 
