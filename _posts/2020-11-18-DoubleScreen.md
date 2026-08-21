@@ -1,6 +1,7 @@
 ---
 title: Linux 设置双屏幕
 date: 2020-11-18 17:55:03 -500
+description: "外接显示器没有信号、系统也检测不到？从 X Window 与 XRandR 入手，理解并解决 Linux 双屏配置问题。"
 categories: [Technique, Environment Setting]
 tags: [linux, lang-zh]
 ---

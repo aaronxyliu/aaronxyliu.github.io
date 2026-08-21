@@ -1,6 +1,7 @@
 ---
 title: Programming Language Pragmatics
 date: 2024-05-16 22:10:00 +500
+description: "Why do imperative, functional, and logic languages feel so different? Compare their computational styles and the design choices behind each language family."
 math: true
 categories: [Theory, Programming Language]
 tags: [note, lang-en, PL]
@@ -114,5 +115,4 @@ gcd(A,B,G) :- A < B, C is B-A, gcd (C,A,G)
 ```
 
 It should be emphasized that the distinctions among language families are **not** clear-cut. The division between von Neumann and object-oriented languages, for example, is often very fuzzy, and many scripting languages are also object-oriented.
-
 

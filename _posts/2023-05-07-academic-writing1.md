@@ -1,6 +1,7 @@
 ---
 title: Academic Writing I — Thinking about the Research
 date: 2023-05-07 16:00:00 +500
+description: "Strong papers begin before the first sentence. Learn to distinguish practical and conceptual problems, shape a working hypothesis, and turn curiosity into research."
 categories: [Writing]
 tags: [note, lang-en]
 ---

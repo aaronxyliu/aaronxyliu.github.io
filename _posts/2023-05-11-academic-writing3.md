@@ -1,6 +1,7 @@
 ---
 title: Academic Writing III — Revising
 date: 2023-05-11 10:35:00 +500
+description: "A first draft only reveals what needs work. Revise arguments, structure, paragraphs, and sentences with a practical reader-centered checklist."
 categories: [Writing]
 tags: [note, lang-en]
 ---

@@ -1,6 +1,7 @@
 ---
 title: The Difference in Common Usage between JavaScript and Python
 date: 2023-02-20 14:00:00 -500
+description: "A practical side-by-side reference for common JavaScript and Python tasks, from numbers and strings to collections, loops, and file handling."
 categories: [Technique, Coding]
 tags: [javascript, python, lang-en]
 ---
@@ -145,4 +146,3 @@ arr.sort((a, b) => b.score - a.score)     // descending order
 ```python
 arr.sort(key=lambda x: x.score, reverse=True)	 # descending order
 ```
-

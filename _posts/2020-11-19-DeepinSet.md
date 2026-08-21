@@ -1,6 +1,7 @@
 ---
 title: Deepin 开发环境配置
 date: 2020-11-19 10:30:00 -500
+description: "从 VS Code、环境变量到常用开发工具，一步步搭好顺手的 Deepin 编程环境，让新系统更快进入工作状态。"
 categories: [Technique, Environment Setting]
 tags: [linux, lang-zh]
 ---

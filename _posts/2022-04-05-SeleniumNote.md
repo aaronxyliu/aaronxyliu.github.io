@@ -1,6 +1,7 @@
 ---
 title: Selenium Source Code Analysis
 date: 2022-04-05 12:00:00 -500
+description: "Follow a Selenium command from the W3C WebDriver protocol into the JavaScript bindings and discover how browser automation works beneath the API."
 categories: [Technique, Coding]
 tags: [selenium, web, lang-en]
 ---
@@ -190,4 +191,3 @@ class WebDriver {
   }
 }
 ```
-

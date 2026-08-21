@@ -1,6 +1,7 @@
 ---
 title: VMware Fusion Ubuntu 虚拟机通过 Mac VPN 访问外网教程
 date: 2026-07-08 08:31:00 +500
+description: "Mac 已经连上 VPN，Ubuntu 虚拟机却仍无法访问外网？本文从 VMware 网络模式到代理转发给出完整排查与配置步骤。"
 math: true
 categories: [Technique, Environment Setting]
 tags: [note, linux]

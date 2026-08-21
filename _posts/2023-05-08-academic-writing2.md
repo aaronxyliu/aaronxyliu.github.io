@@ -1,6 +1,7 @@
 ---
 title: Academic Writing II — Error-prone Style Details
 date: 2023-05-08 12:00:00 +500
+description: "Small language mistakes can distract from strong research. Review the spelling and punctuation choices that make academic prose feel precise and professional."
 categories: [Writing]
 tags: [note, lang-en]
 ---

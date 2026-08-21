@@ -1,6 +1,7 @@
 ---
 title: 软件工程形式化入门（六）：AI 写完代码，谁来验收？大模型与形式化方法的边界
 date: "2026-08-20 15:00:00 +0800"
+description: "大模型生成的代码看起来正确，就真的值得信任吗？从测试、验证与证明出发，重新理解 AI 编程时代的可靠性边界。"
 math: true
 categories: [Theory, 软工形式化入门]
 tags: [note, lang-zh, SE, LLM]

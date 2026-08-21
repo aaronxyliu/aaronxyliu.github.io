@@ -1,6 +1,7 @@
 ---
 title: 软件工程形式化入门（二）：程序会走到哪里？从代码、CFG 到程序语义
 date: "2026-08-16 13:13:00 +0800"
+description: "代码究竟可能走到哪里？从控制流图和程序状态出发，跟着执行路径读懂操作语义中的判断与推导规则。"
 math: true
 categories: [Theory, 软工形式化入门]
 tags: [note, lang-zh, SE]
