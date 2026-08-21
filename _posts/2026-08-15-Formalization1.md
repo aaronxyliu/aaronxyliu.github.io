@@ -6,11 +6,15 @@ categories: [Theory, 软工形式化入门]
 tags: [note, lang-zh, SE]
 ---
 
-读软件工程论文时，最让人泄气的时刻，往往不是看不懂算法，而是读到一半突然被一行符号挡住：每个字母似乎都见过，连在一起却不知道该从哪里读起。
+第一次认真读程序分析论文，很多人都有过相似的经历：摘要读得很顺，方法动机也不难理解，可当作者真正开始定义方法，页面上却突然出现了集合、箭头和希腊字母。每个符号似乎都见过，合在一起却像换了一种语言。再往后翻，实验部分又能继续读下去，唯独中间的形式化（formalization）内容像一座没有入口的桥。
 
-这种停顿通常与数学能力无关。论文只是把研究对象、程序状态和分析步骤压缩进了几行定义，却省略了初学者最需要的阅读顺序。本文要做的，就是把这些定义重新展开，翻译成自然语言和熟悉的程序操作。
+这种停顿通常不是因为读者数学基础不够，而是因为论文把研究对象、程序状态和分析步骤压缩进了几行定义，却很少说明这些定义应该按什么顺序阅读。一旦不知道某个字母代表什么对象，后面的关系和规则也就无从谈起。
 
-先看两种常见写法：
+这个系列主要写给刚开始接触软件分析的硕士研究生，也写给对静态分析（static analysis）、程序验证（program verification）和程序语言（programming languages）感兴趣的读者。它的目标不是补一整套数学课程，而是为论文阅读提供一条形式化入门路径：先看出公式定义了什么，再把它翻译回熟悉的程序概念，最后判断论文的技术结论建立在哪些前提上。
+
+六篇文章会沿着这条阅读路线逐步深入。旅程从集合、映射和程序状态开始，随后进入控制流图（Control-Flow Graph，CFG）和程序语义（program semantics），观察程序怎样执行。当具体状态多到无法穷举时，我们会转向抽象解释（abstract interpretation），用抽象域（abstract domain）、格（lattice）和合并操作（join）保留分析真正需要的信息；然后再用传递函数（transfer function）、工作列表算法（worklist algorithm）和不动点（fixed point）把局部规则连成可以运行的分析器。系列的后半程会讨论可靠性（soundness）、精度（precision）与工程规模之间的取舍，最后回到大语言模型（Large Language Model，LLM）带来的新问题：当模型可以生成代码和修复时，谁来提供可检查的保证？
+
+作为整个系列的起点，本文暂时不追求更复杂的理论，而是先学会辨认公式中的基本对象，理解它们如何组成程序状态，再把一条语义规则还原成自然语言和伪代码。从下面两种常见写法开始：
 
 $$
 \sigma\in\Sigma=X\rightarrow V
@@ -24,9 +28,7 @@ $$
 \sigma[x\mapsto[\![e]\!](\sigma)],
 $$
 
-它们看起来像数学题，其实没有未知数需要求解：第一行定义程序状态，第二行描述赋值语句如何改变状态。拆开以后，不过是字典操作和几行伪代码。
-
-本文不补一整套数学课程，只讨论怎样阅读软件工程论文中的形式化表达。以后在 ICSE、FSE、ASE、ISSTA 等会议论文里再遇到集合、映射和语义规则时，你会知道先看什么。
+它们看起来像数学题，其实没有未知数需要求解：第一行定义程序状态，第二行描述赋值语句如何改变状态。拆开以后，不过是字典操作和几行伪代码。当你以后在 ICSE、FSE、ASE、ISSTA 等会议论文里再遇到集合、映射和语义规则时，这些符号就不再是需要跳过的黑箱。
 
 多数软件工程论文里的形式化是一种精确的技术语言，主要回答三个问题：
 
@@ -36,17 +38,7 @@ $$
 
 我们会借助一个只有两条赋值语句的小程序，先区分集合、元素、元组和序列，再读懂映射与程序状态，最后把语义规则还原为自然语言和伪代码。这条路线的目标不是记住一张符号表，而是建立一套面对陌生公式时仍然可以工作的阅读顺序。
 
-阅读路线如下：
 
-$$
-\text{基本对象}
-\longrightarrow
-\text{程序状态}
-\longrightarrow
-\text{语义规则}
-\longrightarrow
-\text{阅读方法}.
-$$
 
 ---
 
@@ -208,7 +200,7 @@ $$
 A^*
 $$
 
-表示由零个或多个 $A$ 中元素组成的有限序列。这里的星号称为 Kleene 星号。
+表示由零个或多个 $A$ 中元素组成的有限序列。这里的星号称为克莱尼星号（Kleene star）。
 
 若 $I$ 是指令集合，那么 $I^*$ 就是一段指令序列，可以是：
 
@@ -220,7 +212,7 @@ $$
 
 - 语句或指令序列；
 - 函数参数列表；
-- API 调用序列；
+- 应用程序接口（Application Programming Interface，API）调用序列；
 - 程序执行轨迹。
 
 集合强调“成员属于哪里”，元组强调“哪些对象组成一项记录”，序列则额外保留元素的先后顺序。
@@ -378,7 +370,7 @@ x = y + 1;
 
 ### 3.3 更新后的对象怎样命名？
 
-$\sigma'$ 读作 sigma prime。在程序语义中，它常表示下一状态或更新后的状态。例如：
+$\sigma'$ 读作“西格玛撇”（sigma prime）。在程序语义中，它常表示下一状态或更新后的状态。例如：
 
 $$
 \sigma\rightarrow\sigma'
@@ -386,7 +378,7 @@ $$
 
 可以表示程序从状态 $\sigma$ 转移到状态 $\sigma'$。
 
-Prime 并没有跨论文统一的含义。它也可能表示“与原对象相关的另一个对象”，因此仍需查看作者的定义。
+撇号（prime）并没有跨论文统一的含义。它也可能表示“与原对象相关的另一个对象”，因此仍需查看作者的定义。
 
 ---
 
@@ -544,7 +536,7 @@ $$
 \text{具体对象}\longrightarrow\text{保留所需性质的抽象对象}.
 $$
 
-Hat 是抽象解释中的常见约定，但不是固定语法。看到 $\hat{x}$ 时，先检查作者是否在区分具体对象与抽象对象。
+帽子符号（hat）是抽象解释中的常见约定，但不是固定语法。看到 $\hat{x}$ 时，先检查作者是否在区分具体对象与抽象对象。
 
 ---
 
@@ -675,23 +667,25 @@ $$
 
 本文只负责帮你跨过符号阅读这道门槛。如果想继续深入，可以根据自己的研究问题选一条路线，不必一次把所有材料都学完。
 
-- **程序语言基础**：本博客的 [*Easy Foundations for Programming Languages*]({{ '/posts/easy_PL1/' | relative_url }}) 系列从类型化 Lambda 演算讲起，适合刚接触程序语言理论的学生。
+- **程序语言基础**：本博客的 [*Easy Foundations for Programming Languages*]({{ '/posts/easy_PL1/' | relative_url }}) 系列从类型化 $\lambda$ 演算（typed lambda calculus）讲起，适合刚接触程序语言理论的学生。
 
-- **形式化推理与程序验证**：[*Software Foundations*](https://softwarefoundations.cis.upenn.edu/) 是一套经典的交互式教材，内容涵盖逻辑、操作语义、Hoare 逻辑和类型系统。书中定义和练习都使用 Coq 检查，适合希望系统练习形式化推理的读者。
+- **形式化推理与程序验证**：[*Software Foundations*](https://softwarefoundations.cis.upenn.edu/) 是一套经典的交互式教材，内容涵盖逻辑、操作语义、霍尔逻辑（Hoare logic）和类型系统。书中的定义和练习都使用证明助手（Coq）检查，适合希望系统练习形式化推理的读者。
 
-- **Operational Semantics 与 Denotational Semantics**：[Cornell CS 4110 的课程材料](https://www.cs.cornell.edu/courses/cs4110/2021fa/lectures/slides07.pdf) 给出了一个很好记的区分：Operational Semantics 关注程序**如何计算**，Denotational Semantics 关注程序**计算什么**。如果论文开始讨论求值关系或语义函数，可以从这里继续。
+- **操作语义（Operational Semantics）与指称语义（Denotational Semantics）**：[康奈尔大学（Cornell University）CS 4110 的课程材料](https://www.cs.cornell.edu/courses/cs4110/2021fa/lectures/slides07.pdf) 给出了一个很好记的区分：操作语义关注程序**如何计算**，指称语义关注程序**计算什么**。如果论文开始讨论求值关系或语义函数，可以从这里继续。
 
-- **静态分析**：若研究方向涉及静态分析，可以阅读 MIT Press 的 [*Introduction to Static Analysis: An Abstract Interpretation Perspective*](https://mitpress.mit.edu/9780262043410/introduction-to-static-analysis/)。它从程序语义、状态抽象和抽象语义讲到不动点计算与工作列表算法，理论与实现衔接得比较完整。
+- **静态分析入门网课**：南京大学[李樾老师](https://cs.nju.edu.cn/yueli/index.htm)的[《软件分析》课程](https://www.bilibili.com/video/BV1yFWDzZEdT) 从基本概念逐步进入静态分析的理论与实践，适合还没有系统学过程序分析的读者。课程的讲解对新手很友好，硕士生可以用它建立研究所需的基本框架，对这个方向感兴趣的本科生也完全可以跟学。
 
-- **抽象解释的理论基础**：Patrick Cousot 的 [MIT Abstract Interpretation 课程](https://web.mit.edu/16.399/www/)适合继续研究格、不动点和可靠近似。不过，对刚进入软件工程研究的学生来说，这不应是 formalization 的起点。先学会读程序、状态和迁移规则，再进入格与不动点，会更容易建立直觉。
+- **静态分析教材**：建立基本直觉后，可以继续阅读麻省理工学院出版社（MIT Press）的 [*Introduction to Static Analysis: An Abstract Interpretation Perspective*](https://mitpress.mit.edu/9780262043410/introduction-to-static-analysis/)。它从程序语义、状态抽象和抽象语义讲到不动点计算与工作列表算法，理论与实现衔接得比较完整。
 
-这些材料不是一张必须依次完成的课程表。做程序验证，可以优先看 *Software Foundations*；研究静态分析，就从 MIT Press 的教材向抽象解释深入；只想读懂论文中的语义定义，博客系列和 Cornell 的课程材料已经足够作为下一步。
+- **抽象解释的理论基础**：帕特里克·库索（Patrick Cousot）的 [麻省理工学院（MIT）抽象解释（Abstract Interpretation）课程](https://web.mit.edu/16.399/www/)适合继续研究格、不动点和可靠近似。不过，对刚进入软件工程研究的学生来说，这不应是形式化（formalization）的起点。先学会读程序、状态和迁移规则，再进入格与不动点，会更容易建立直觉。
+
+这些材料不是一张必须依次完成的课程表。做程序验证，可以优先看 *Software Foundations*；研究静态分析，可以先跟着南京大学《软件分析》建立直觉，再借 MIT Press 的教材向抽象解释深入；只想读懂论文中的语义定义，博客系列和 Cornell 的课程材料已经足够作为下一步。
 
 ---
 
 ## 八、本篇小结
 
-Formalization 入门最重要的不是掌握多少数学，而是形成一种阅读顺序：
+形式化（formalization）入门最重要的不是掌握多少数学，而是形成一种阅读顺序：
 
 $$
 \boxed{
@@ -741,4 +735,4 @@ $$
 
 能在公式、自然语言和伪代码之间完成这样的转换，就迈过了阅读软件工程形式化定义的第一道门槛。
 
-下一篇：[*程序会走到哪里？从代码、CFG 到程序语义*]({{ site.url }}/posts/Formalization2/)。
+下一篇：[*程序会走到哪里？从代码、控制流图（CFG）到程序语义*]({{ site.url }}/posts/Formalization2/)。
