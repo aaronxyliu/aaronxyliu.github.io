@@ -23,7 +23,7 @@ title: Xinyue Liu's Blog # the main title
 tagline: Record what I love # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  This is my home lab.
+  刘心悦的个人科研博客，分享程序分析、程序语言、形式化方法、Web 安全、软件工程研究与科研写作。
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://aaronxyliu.github.io"

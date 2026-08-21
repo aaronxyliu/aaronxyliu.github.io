@@ -309,30 +309,30 @@ I welcome conversations about academic collaboration, student advising, and indu
 <div class="featured-reading">
   <div class="reading-label">RECOMMENDED · 中文 · 7 篇</div>
   <h3 data-toc-skip>软件工程形式化入门</h3>
-  <p>读程序分析论文时，你是不是也常常前面看得很顺，一翻到定义和公式就突然卡住？这个系列就是想帮你迈过这道坎：不用先补一大堆数学，也能慢慢看懂那些符号到底在说什么，读论文时心里更有底；系列另附一篇趣味 <a href="{{ '/posts/Formalization7/' | relative_url }}">形式化历史概述</a>。</p>
+  <p>想读懂程序分析论文，又不知道该从哪里补起？这个系列准备了一条不绕远路的入门路线，帮你逐渐建立阅读定义、规则与分析结论的直觉；最后还附有一篇轻松的 <a href="{{ '/posts/Formalization7/' | relative_url }}">形式化历史故事</a>。</p>
   <div class="reading-links">
     <a href="{{ '/posts/Formalization1/' | relative_url }}">从第一篇开始 →</a>
-    <a href="{{ '/categories/软工形式化入门/' | relative_url }}">查看完整系列</a>
+    <a href="{{ '/posts/Formalization-guide/' | relative_url }}">查看完整系列</a>
   </div>
 </div>
 
 <div class="reading-grid">
-  <a class="reading-card" href="{{ '/categories/programming-language/' | relative_url }}">
+  <a class="reading-card" href="{{ '/posts/programming-language-guide/' | relative_url }}">
     <span class="reading-count">11 篇 · 入门路线</span>
     <h3 data-toc-skip>Easy Foundations for Programming Languages</h3>
     <p>从基础概念进入程序语言理论，适合希望系统补充 PL 基础的读者。</p>
   </a>
-  <a class="reading-card" href="{{ '/categories/denotational-semantics/' | relative_url }}">
+  <a class="reading-card" href="{{ '/posts/denotational-semantics-guide/' | relative_url }}">
     <span class="reading-count">5 篇 · 进阶专题</span>
     <h3 data-toc-skip>Denotational Semantics of Typed Lambda Calculus</h3>
     <p>围绕类型化 λ 演算的指称语义，进一步理解程序如何映射到数学模型。</p>
   </a>
-  <a class="reading-card" href="{{ '/categories/randomized-algorithm/' | relative_url }}">
+  <a class="reading-card" href="{{ '/posts/randomized-algorithms-guide/' | relative_url }}">
     <span class="reading-count">12 篇 · 算法基础</span>
     <h3 data-toc-skip>Randomized Algorithms</h3>
     <p>从概率工具到经典随机算法，整理分析思路与常见证明方法。</p>
   </a>
-  <a class="reading-card" href="{{ '/categories/writing/' | relative_url }}">
+  <a class="reading-card" href="{{ '/posts/academic-writing-guide/' | relative_url }}">
     <span class="reading-count">3 篇 · 科研训练</span>
     <h3 data-toc-skip>Academic Writing</h3>
     <p>讨论如何思考研究问题、组织论文结构，以及让技术写作更清楚。</p>

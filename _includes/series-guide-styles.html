@@ -1,0 +1,99 @@
+<style>
+  .series-map {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1.35rem 0 2rem;
+  }
+
+  .post-content a.series-entry {
+    display: grid;
+    grid-template-columns: 3.25rem 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.05rem 1.15rem;
+    border: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .post-content a.series-entry:hover {
+    border-bottom: 1px solid var(--card-border-color);
+    color: var(--text-color) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px var(--card-box-shadow);
+  }
+
+  .series-number {
+    color: var(--link-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  .series-entry h3 {
+    margin: 0 0 0.25rem !important;
+    font-size: 1.03rem;
+    font-weight: 600;
+  }
+
+  .series-entry p {
+    margin: 0;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .series-kind {
+    padding: 0.22rem 0.5rem;
+    border: 1px solid var(--tag-border);
+    border-radius: 999px;
+    color: var(--text-muted-color);
+    font-size: 0.72rem;
+    white-space: nowrap;
+  }
+
+  .series-routes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin: 1.2rem 0 1.75rem;
+  }
+
+  .series-route {
+    padding: 1rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 9px;
+    background: var(--card-bg);
+  }
+
+  .series-route strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--heading-color);
+  }
+
+  .series-route p {
+    margin: 0;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 576px) {
+    .post-content a.series-entry {
+      grid-template-columns: 2.6rem 1fr;
+      gap: 0.7rem;
+    }
+
+    .series-kind {
+      display: none;
+    }
+
+    .series-routes {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
