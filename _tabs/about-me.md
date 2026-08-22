@@ -370,7 +370,7 @@ I welcome conversations about academic collaboration, student advising, and indu
     <div>
       <strong class="publication-title">PTV: Scalable Version Detection of Web Libraries and its Security Application</strong>
       <p class="publication-meta"><strong>X. Liu</strong>, H. Cai, L. Ziarek · ICSE 2026 · Acceptance: 24.2% (160/660)</p>
-      <div class="publication-links"><a href="{{ '/download/ptv-ready.pdf' | relative_url }}">PDF</a> · <a href="{{ '/download/ptv-proof.pdf' | relative_url }}">Supplementary material</a></div>
+      <div class="publication-links"><a href="{{ '/download/publications/ptv-ready.pdf' | relative_url }}">PDF</a> · <a href="{{ '/download/publications/ptv-proof.pdf' | relative_url }}">Supplementary material</a></div>
     </div>
   </div>
 
@@ -379,7 +379,7 @@ I welcome conversations about academic collaboration, student advising, and indu
     <div>
       <strong class="publication-title">WEFix: Intelligent Automatic Generation of Explicit Waits for Efficient Web End-to-End Flaky Tests</strong>
       <p class="publication-meta"><strong>X. Liu</strong>, Z. Song, W. Fang, W. Yang, W. Wang · WWW 2024 · Acceptance: 20.2% (405/2008)</p>
-      <div class="publication-links"><a href="{{ '/download/wefix.pdf' | relative_url }}">PDF</a></div>
+      <div class="publication-links"><a href="{{ '/download/publications/wefix.pdf' | relative_url }}">PDF</a></div>
     </div>
   </div>
 
@@ -388,7 +388,7 @@ I welcome conversations about academic collaboration, student advising, and indu
     <div>
       <strong class="publication-title">PTdetector: An Automated JavaScript Front-end Library Detector</strong>
       <p class="publication-meta"><strong>X. Liu</strong>, L. Ziarek · ASE 2023 · Acceptance: 21% (103/629)</p>
-      <div class="publication-links"><a href="{{ '/download/PTdetector.pdf' | relative_url }}">PDF</a></div>
+      <div class="publication-links"><a href="{{ '/download/publications/PTdetector.pdf' | relative_url }}">PDF</a></div>
     </div>
   </div>
 
@@ -397,7 +397,7 @@ I welcome conversations about academic collaboration, student advising, and indu
     <div>
       <strong class="publication-title">AdHere: Automated Detection and Repair of Intrusive Ads</strong>
       <p class="publication-meta">Y. Yan, Y. Zheng, <strong>X. Liu</strong>, N. Medvidovic, W. Wang · ICSE 2023 · Acceptance: 26% (209/796)</p>
-      <div class="publication-links"><a href="{{ '/download/Adhere.pdf' | relative_url }}">PDF</a></div>
+      <div class="publication-links"><a href="{{ '/download/publications/Adhere.pdf' | relative_url }}">PDF</a></div>
     </div>
   </div>
 
@@ -406,7 +406,7 @@ I welcome conversations about academic collaboration, student advising, and indu
     <div>
       <strong class="publication-title">An Empirical Study of Bugs in WebAssembly Compilers</strong>
       <p class="publication-meta">A. Romano, <strong>X. Liu</strong>, Y. Kwon, W. Wang · ASE 2021 · Acceptance: 19.2% (82/427)</p>
-      <div class="publication-links"><a href="{{ '/download/Empirical_Study_of_Bugs_in_WebAssembly_Compilers.pdf' | relative_url }}">PDF</a></div>
+      <div class="publication-links"><a href="{{ '/download/publications/Empirical_Study_of_Bugs_in_WebAssembly_Compilers.pdf' | relative_url }}">PDF</a></div>
     </div>
   </div>
 
@@ -415,7 +415,7 @@ I welcome conversations about academic collaboration, student advising, and indu
     <div>
       <strong class="publication-title">Is Bigger Data Better for Defect Prediction: Examining the Impact of Data Size on Supervised and Unsupervised Defect Prediction</strong>
       <p class="publication-meta"><strong>X. Liu</strong>, Yanhui Li · WISA 2019</p>
-      <div class="publication-links"><a href="{{ '/download/Is_big_data.pdf' | relative_url }}">PDF</a></div>
+      <div class="publication-links"><a href="{{ '/download/publications/Is_big_data.pdf' | relative_url }}">PDF</a></div>
     </div>
   </div>
 </div>

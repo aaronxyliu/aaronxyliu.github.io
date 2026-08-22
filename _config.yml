@@ -141,6 +141,16 @@ collections:
     sort_by: order
 
 defaults:
+  # Keep only the papers featured on the About Me page in the sitemap.
+  # Other downloadable PDFs remain accessible through direct links.
+  - scope:
+      path: download
+    values:
+      sitemap: false
+  - scope:
+      path: download/publications
+    values:
+      sitemap: true
   - scope:
       path: "" # An empty string here means all files in the project
       type: posts
