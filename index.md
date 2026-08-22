@@ -1,8 +1,8 @@
 ---
-# the default layout is 'page'
+layout: profile-home
 title: About Me
-icon: fas fa-info-circle
-order: 4
+description: 刘心悦的个人主页，介绍研究方向、学术经历、论文成果，以及程序分析、程序语言和科研写作系列文章。
+permalink: /
 ---
 
 <style>
@@ -48,7 +48,7 @@ order: 4
     margin-top: 1.35rem;
   }
 
-  .post-content .about-actions a {
+  .about-actions a {
     padding: 0.45rem 0.85rem;
     border: 1px solid var(--btn-border-color) !important;
     border-radius: 999px;
@@ -57,7 +57,7 @@ order: 4
     text-decoration: none;
   }
 
-  .post-content .about-actions a:hover {
+  .about-actions a:hover {
     border-color: var(--link-color) !important;
     color: var(--link-color) !important;
   }
@@ -127,7 +127,7 @@ order: 4
     margin: 1rem 0 1.5rem;
   }
 
-  .post-content a.reading-card {
+  a.reading-card {
     display: block;
     min-height: 155px;
     padding: 1.2rem;
@@ -138,7 +138,7 @@ order: 4
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
-  .post-content a.reading-card:hover {
+  a.reading-card:hover {
     border-bottom: 1px solid var(--card-border-color);
     color: var(--text-color) !important;
     transform: translateY(-3px);
@@ -262,7 +262,7 @@ order: 4
       grid-template-columns: 1fr;
     }
 
-    .post-content a.reading-card {
+    a.reading-card {
       min-height: auto;
     }
 
@@ -283,6 +283,7 @@ order: 4
   <div class="about-actions">
     <a href="{{ '/download/Xinyue_CV_en.pdf' | relative_url }}"><i class="fas fa-file-alt fa-fw"></i> Curriculum Vitae</a>
     <a href="https://github.com/aaronxyliu"><i class="fab fa-github fa-fw"></i> GitHub</a>
+    <a href="https://dblp.org/pid/45/2337-5.html"><i class="fas fa-book-open fa-fw"></i> DBLP</a>
     <a href="https://www.cse.cqu.edu.cn/info/2167/8532.htm"><i class="fas fa-university fa-fw"></i> CQU Homepage</a>
   </div>
   <div class="about-email"><strong>Email:</strong> aaronxyliu@cqu.edu.cn</div>
