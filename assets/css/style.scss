@@ -1,0 +1,10 @@
+---
+---
+
+/*
+ * Chirpy calculates the sidebar cursor from the number of navigation items.
+ * Besides the generated tabs, this site has both HOME and BLOG entries.
+ */
+$tab-count: {{ site.tabs | size | plus: 2 }};
+
+@import "{{ site.theme }}";
