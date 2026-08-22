@@ -2,11 +2,12 @@
 title: 程序语言基础：从语法、语义到命令式程序的阅读地图
 date: "2024-05-15 10:00:00 +0800"
 description: 十一篇程序语言基础笔记的中文导航，从语言范式、数学记号和 PCF 逐步走向类型、证明系统与命令式语义。
+image:
+  path: /assets/img/series-covers/programming-languages-series.webp
+  alt: 用语法树、类型拼图与存储结构搭建一门小语言
 categories: [Theory, Programming Language]
 tags: [note, lang-zh, PL, semantics]
 ---
-
-{% include series-guide-styles.html %}
 
 每天写代码时，我们很少追问一门语言为什么拥有这样的语法、一个表达式怎样获得意义，或者两段程序在什么条件下可以被认为等价。程序语言理论把这些习以为常的问题重新摆到桌面上，并尝试用一套可推理的结构回答它们。
 

@@ -2,11 +2,12 @@
 title: 类型化 Lambda 演算的指称语义：五篇文章的进阶路线
 date: "2024-07-04 10:00:00 +0800"
 description: 五篇类型化 Lambda 演算指称语义笔记的中文导航，从 Henkin 模型、CPO 与连续函数走向 PCF 和命令式程序模型。
+image:
+  path: /assets/img/series-covers/denotational-semantics-series.webp
+  alt: 程序结构被映射到逐层收敛的不动点数学空间
 categories: [Theory, Denotational Semantics]
 tags: [note, lang-zh, PL, denotational semantics]
 ---
-
-{% include series-guide-styles.html %}
 
 如果操作语义讲的是程序一步一步怎样运行，那么指称语义更关心另一个问题：能否给每个程序找到一个数学对象，使程序的意义不再依赖某一次具体执行？这个想法听起来抽象，却让程序等价、递归和状态都进入了可以计算与证明的模型。
 

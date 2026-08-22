@@ -13,7 +13,7 @@ permalink: /
   .featured-reading,
   .reading-card,
   .publication-item {
-    border: 1px solid var(--card-border-color);
+    border: 1px solid var(--btn-border-color);
     background: var(--card-bg);
   }
 
@@ -30,18 +30,21 @@ permalink: /
     font-size: 0.76rem;
     font-weight: 700;
     letter-spacing: 0.12em;
+    text-align: center;
   }
 
   .about-hero h1 {
     margin: 0 0 0.35rem !important;
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
   }
 
   .about-role {
     margin-bottom: 1rem;
     color: var(--text-muted-color);
     font-size: 1.06rem;
+    text-align: center;
   }
 
   .about-actions {
@@ -134,7 +137,7 @@ permalink: /
     display: block;
     min-height: 155px;
     padding: 1.2rem;
-    border-bottom: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--btn-border-color);
     border-radius: 10px;
     color: var(--text-color);
     text-decoration: none;
@@ -142,10 +145,10 @@ permalink: /
   }
 
   a.reading-card:hover {
-    border-bottom: 1px solid var(--card-border-color);
+    border-bottom: 1px solid var(--btn-border-color);
     color: var(--text-color) !important;
     transform: translateY(-3px);
-    box-shadow: 0 8px 18px var(--card-box-shadow);
+    box-shadow: var(--card-shadow);
   }
 
   .reading-card h3 {

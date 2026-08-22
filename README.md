@@ -53,7 +53,7 @@ JEKYLL_ENV=production bundle exec jekyll build -d _site
 检查生成页面中的 HTML、内部链接和图片：
 
 ```shell
-bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
+bundle exec htmlproofer _site --disable-external --no-ignore-empty-alt
 ```
 
 推送到 `main` 或 `master` 分支后，GitHub Actions 会自动构建并部署 GitHub Pages。
@@ -62,3 +62,19 @@ bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href
 
 - 文章写作方式参见 [Chirpy Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)。
 - 可使用 [Google Search Console](https://search.google.com/search-console/about) 提交网站并查看搜索收录情况。
+
+### 中英文界面
+
+网站会根据文章语言分别显示中文或英文界面，包括目录、日期、阅读时间、文章导航和评论区域。新文章推荐在 Front Matter 中直接声明语言：
+
+```yaml
+lang: zh-CN # 中文文章
+```
+
+或：
+
+```yaml
+lang: en # English post
+```
+
+为了兼容现有文章，`lang-zh` 和 `lang-en` 标签也会分别自动映射为 `zh-CN` 和 `en`。如果同时存在 `lang` 与语言标签，以明确填写的 `lang` 为准。

@@ -2,11 +2,12 @@
 title: 科研写作：从研究问题到论文修改的三步路线
 date: "2023-05-06 10:00:00 +0800"
 description: 三篇科研写作笔记的阅读导航，从形成研究问题、处理语言细节到系统修改论文。
+image:
+  path: /assets/img/series-covers/academic-writing-series.webp
+  alt: 研究者把零散笔记整理成一条清晰论证并汇成论文
 categories: [Writing]
 tags: [note, lang-zh, academic writing]
 ---
-
-{% include series-guide-styles.html %}
 
 论文写作很少真的始于一个空白文档。动笔之前，我们已经在选择问题、判断证据和组织论点；初稿完成之后，还要反复检查结构、句子和标点。写作困难，往往正是因为这些原本属于不同阶段的任务挤在了一起。
 

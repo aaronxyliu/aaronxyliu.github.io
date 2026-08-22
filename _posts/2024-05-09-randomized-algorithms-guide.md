@@ -2,11 +2,12 @@
 title: 随机算法：从概率直觉到经典方法的阅读地图
 date: "2024-05-09 10:00:00 +0800"
 description: 十二篇随机算法笔记的中文导航，串联概率工具、随机舍入、指纹、哈希与在线预测等主题。
+image:
+  path: /assets/img/series-covers/randomized-algorithms-series.webp
+  alt: 随机路径经过概率筛选后抵达算法目标
 categories: [Theory, Randomized Algorithm]
 tags: [note, lang-zh, algorithm, randomized algorithm]
 ---
-
-{% include series-guide-styles.html %}
 
 在确定性算法里，“随机选择”听上去像是把结果交给运气；在随机算法里，它恰恰是一种经过设计的工具。随机性可以避开难以处理的最坏情况，可以把昂贵的精确计算改造成高概率正确的快速判断，也可以让一个简单策略拥有意想不到的性能保证。
 
