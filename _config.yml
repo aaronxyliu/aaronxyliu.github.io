@@ -13,7 +13,7 @@ baseurl: ""
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: America/New_York
+timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -38,7 +38,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Xinyue Liu
-  email: xliu234@buffalo.com # change to your email address
+  email: aaronxyliu@cqu.edu.cn
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/aaronxyliu # change to your twitter homepage

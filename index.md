@@ -1,7 +1,10 @@
 ---
 layout: profile-home
-title: About Me
-description: 刘心悦的个人主页，介绍研究方向、学术经历、论文成果，以及程序分析、程序语言和科研写作系列文章。
+title: 刘心悦（Xinyue Liu）｜重庆大学助理教授
+description: 刘心悦，重庆大学大数据与软件学院助理教授，研究 Web 应用分析与测试、依赖安全及大模型辅助程序分析；主页汇集个人论文、研究经历与程序分析、形式化方法等系列博客。
+image:
+  path: /assets/img/xinyue-liu-homepage.jpg
+  alt: 刘心悦（Xinyue Liu），重庆大学大数据与软件学院助理教授
 permalink: /
 ---
 
@@ -29,7 +32,7 @@ permalink: /
     letter-spacing: 0.12em;
   }
 
-  .about-hero h2 {
+  .about-hero h1 {
     margin: 0 0 0.35rem !important;
     font-size: 2rem;
     font-weight: 600;
@@ -254,7 +257,7 @@ permalink: /
       padding: 1.35rem;
     }
 
-    .about-hero h2 {
+    .about-hero h1 {
       font-size: 1.65rem;
     }
 
@@ -275,7 +278,7 @@ permalink: /
 
 <div class="about-hero">
   <div class="about-kicker">SOFTWARE ENGINEERING · PROGRAMMING LANGUAGES</div>
-  <h2 data-toc-skip>Xinyue Liu <small>刘心悦</small></h2>
+  <h1 data-toc-skip>Xinyue Liu <small>刘心悦</small></h1>
   <div class="about-role">Assistant Professor · Chongqing University</div>
   <p>I am an assistant professor (弘深青年教师) in the School of Big Data &amp; Software Engineering at <strong>Chongqing University (CQU, 重庆大学)</strong>. I am currently a member of the Intelligent Software Engineering research team led by <a href="https://sites.google.com/site/hongyujohn">Hongyu Zhang (张洪宇)</a>.</p>
   <p>For visitors, my office is on the CQU Huxi Campus: <strong>重庆大学虎溪校区信息技术科研楼 B707</strong>.</p>

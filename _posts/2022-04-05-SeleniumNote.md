@@ -19,7 +19,7 @@ When running a Selenium test, WebDriver needs to establish communication with th
 
 The Protocol that Web Driver has been running for a long time is called JSON Wire Protocol. However, starting with Selenium 4 this protocol will no longer be supported. Although, there will be some scenarios where Selenium still provides mechanisms for people to use the former protocol. This may be done through the Java Bindings and Selenium Server. This legacy support provides backward compatibility to organizations that can’t run their cases using the new protocol. These issues could mainly happen either in old infrastructure or when using old driver versions.
 
-![]({{site.url}}/assets/img/2022-04-05/WebDriver-W3C-Protocol.png)
+![Communication flow between Selenium WebDriver, the browser driver, and the browser]({{site.url}}/assets/img/2022-04-05/WebDriver-W3C-Protocol.png)
 
 ### WebDriver W3C Protocol
 

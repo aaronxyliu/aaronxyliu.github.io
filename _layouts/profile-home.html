@@ -2,4 +2,33 @@
 layout: page
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ '/' | absolute_url }}",
+  "name": "刘心悦（Xinyue Liu）｜重庆大学助理教授",
+  "description": {{ page.description | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Xinyue Liu",
+    "alternateName": "刘心悦",
+    "url": "{{ '/' | absolute_url }}",
+    "image": "{{ '/assets/img/xinyue-liu-homepage.jpg' | absolute_url }}",
+    "jobTitle": "Assistant Professor",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Chongqing University",
+      "alternateName": "重庆大学",
+      "url": "https://www.cqu.edu.cn/"
+    },
+    "sameAs": [
+      "https://github.com/aaronxyliu",
+      "https://dblp.org/pid/45/2337-5.html",
+      "https://www.cse.cqu.edu.cn/info/2167/8532.htm"
+    ]
+  }
+}
+</script>
+
 {{ content }}
