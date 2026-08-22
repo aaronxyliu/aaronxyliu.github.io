@@ -1039,13 +1039,13 @@ $$
 对于 ICSE、FSE、ASE、ISSTA 等会议中偏程序分析的工作，最值得优先熟悉的是：
 
 $$
-\boxed{
+
 \text{CFG}
 +
 \text{State}
 +
 \text{Transfer Rule}
-}
+
 $$
 
 典型形式是：
@@ -1235,13 +1235,13 @@ $$
 这个例子把前三个核心对象放在了一起：
 
 $$
-\boxed{
+
 \text{CFG 控制位置}
 +
 \text{State 数据状态}
 +
 \text{Semantic Rule 状态变化}
-}
+
 $$
 
 ---
@@ -1468,13 +1468,13 @@ $$
 这一篇只需要记住一条主线：
 
 $$
-\boxed{
+
 \text{代码}
 \longrightarrow
 \text{控制流}
 \longrightarrow
 \text{状态迁移}
-}
+
 $$
 
 CFG 回答：
@@ -1533,13 +1533,13 @@ $$
 大量 SE 程序分析论文最终都可以还原为：
 
 $$
-\boxed{
+
 \text{CFG}
 +
 \text{State}
 +
 \text{Transfer Rule}
-}
+
 $$
 
 下一篇 [*不用记住每个值——从具体状态走向抽象解释*]({{ site.url }}/posts/Formalization3/) 会在这个框架上，把 concrete state 换成 abstract state，继续讨论 abstract domain、join 和 lattice。
