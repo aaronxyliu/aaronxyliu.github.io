@@ -1,10 +1,10 @@
 ---
 layout: profile-home
-title: 刘心悦（Xinyue Liu）｜重庆大学助理教授
-description: 刘心悦，重庆大学大数据与软件学院助理教授，研究 Web 应用分析与测试、依赖安全及大模型辅助程序分析；主页汇集个人论文、研究经历与程序分析、形式化方法等系列博客。
+title: Xinyue Liu | Assistant Professor at CQU
+description: Xinyue Liu is an Assistant Professor at Chongqing University (CQU), specializing in Software Engineering and Web Analysis. Explore his Research Tutorials.
 image:
   path: /assets/img/xinyue-liu-homepage.jpg
-  alt: 刘心悦（Xinyue Liu），重庆大学大数据与软件学院助理教授
+  alt: Xinyue Liu, Assistant Professor at Chongqing University (CQU)
 permalink: /
 ---
 
