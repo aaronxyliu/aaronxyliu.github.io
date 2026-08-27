@@ -1,6 +1,12 @@
 ---
-layout: page
+layout: default
+panel_includes:
+  - profile-home-toc
 ---
+
+{% include lang.html %}
+
+{% include toc-status.html %}
 
 <script type="application/ld+json">
 {
@@ -31,4 +37,79 @@ layout: page
 }
 </script>
 
-{{ content }}
+<style>
+  #toc-wrapper {
+    margin-top: 2rem;
+  }
+</style>
+
+<article class="px-1" data-toc="{{ enable_toc }}">
+  {% if enable_toc %}
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">{{ page.title }}</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">{{- site.data.locales[lang].panel.toc -}}</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">{{- page.title -}}</div>
+        <button id="toc-popup-close" type="button" class="btn-close btn-sm mx-3" aria-label="Close"></button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  {% endif %}
+
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = Array.from(document.querySelectorAll('#toc .toc-link'));
+    const headings = links
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    if (links.length === 0 || headings.length === 0) return;
+
+    let ticking = false;
+
+    const updateActiveSection = () => {
+      const offset = 110;
+      let activeId = headings[0].id;
+
+      headings.forEach((heading) => {
+        if (heading.getBoundingClientRect().top <= offset) activeId = heading.id;
+      });
+
+      links.forEach((link) => {
+        const active = link.getAttribute('href') === `#${activeId}`;
+        link.classList.toggle('is-active-link', active);
+        link.parentElement.classList.toggle('is-active-li', active);
+      });
+
+      ticking = false;
+    };
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(updateActiveSection);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
+
+    updateActiveSection();
+  });
+</script>

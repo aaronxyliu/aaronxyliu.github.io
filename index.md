@@ -1,17 +1,20 @@
 ---
 layout: profile-home
-title: Xinyue Liu | Assistant Professor at CQU
+title: Xinyue Liu | CQU Assistant Professor in Software Engineering
 description: Xinyue Liu is an Assistant Professor at Chongqing University (CQU), specializing in Software Engineering and Web Analysis. Explore his Research Tutorials.
 image:
   path: /assets/img/xinyue-liu-homepage.jpg
   alt: Xinyue Liu, Assistant Professor at Chongqing University (CQU)
 permalink: /
+toc: true
 ---
 
 <style>
   .about-hero,
   .featured-reading,
   .reading-card,
+  .student-card,
+  .grant-item,
   .publication-item {
     border: 1px solid var(--btn-border-color);
     background: var(--card-bg);
@@ -200,6 +203,66 @@ permalink: /
     color: var(--text-muted-color);
   }
 
+  .student-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .student-card {
+    padding: 1rem 1.1rem;
+    border-radius: 9px;
+  }
+
+  .student-name {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: var(--heading-color);
+    font-weight: 600;
+  }
+
+  .student-role,
+  .grant-meta,
+  .grant-title-en {
+    color: var(--text-muted-color);
+  }
+
+  .student-role {
+    font-size: 0.88rem;
+  }
+
+  .grant-list {
+    display: grid;
+    gap: 0.85rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .grant-item {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    gap: 1rem;
+    padding: 1.1rem 1.2rem;
+    border-radius: 9px;
+  }
+
+  .grant-meta {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  .grant-title {
+    display: block;
+    color: var(--heading-color);
+    line-height: 1.5;
+  }
+
+  .grant-title-en {
+    margin: 0.3rem 0 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
   .publication-list {
     display: grid;
     gap: 0.85rem;
@@ -265,6 +328,11 @@ permalink: /
     }
 
     .reading-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .student-grid,
+    .grant-item {
       grid-template-columns: 1fr;
     }
 
@@ -369,6 +437,8 @@ I welcome conversations about academic collaboration, student advising, and indu
   </div>
 </div>
 
+
+
 ## Publications
 
 <div class="publication-list">
@@ -423,6 +493,41 @@ I welcome conversations about academic collaboration, student advising, and indu
       <strong class="publication-title">Is Bigger Data Better for Defect Prediction: Examining the Impact of Data Size on Supervised and Unsupervised Defect Prediction</strong>
       <p class="publication-meta"><strong>X. Liu</strong>, Yanhui Li · WISA 2019</p>
       <div class="publication-links"><a href="{{ '/download/publications/Is_big_data.pdf' | relative_url }}">PDF</a></div>
+    </div>
+  </div>
+</div>
+
+## Students
+
+I'm glad to guide the following talented students:
+
+<div class="student-grid">
+  <div class="student-card">
+    <span class="student-name">Kesen Wang (王柯森) </span>
+    <span class="student-role">M.S. Student</span>
+  </div>
+  <div class="student-card">
+    <span class="student-name">Hufang Wang (王琥方) </span>
+    <span class="student-role">M.S. Student</span>
+  </div>
+  <div class="student-card">
+    <span class="student-name">Zhaofeng Li (李兆丰) </span>
+    <span class="student-role">Undergraduate Student</span>
+  </div>
+</div>
+
+## Grants
+
+<div class="grant-list">
+  <div class="grant-item">
+    <div class="grant-meta">
+      <strong>2027.01 — 2029.12</strong><br>
+      主持 / Principal Investigator<br>
+      30 万元 / RMB 300,000
+    </div>
+    <div>
+      <strong class="grant-title" lang="zh-CN">重庆市优青专项《运行时语义驱动的 Web 前端分析新方法研究》</strong>
+      <p class="grant-title-en" lang="en">Chongqing  Young Elite Program: “New Methods for Web Front-End Analysis Driven by Runtime Semantics”</p>
     </div>
   </div>
 </div>
