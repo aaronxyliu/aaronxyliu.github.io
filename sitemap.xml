@@ -11,6 +11,10 @@ sitemap: false
     <loc>{{ '/' | absolute_url | xml_escape }}</loc>
   </url>
 
+  <url>
+    <loc>{{ '/download/Xinyue_CV_en.pdf' | absolute_url | xml_escape }}</loc>
+  </url>
+
   {% for post in site.posts %}
   <url>
     <loc>{{ post.url | absolute_url | xml_escape }}</loc>
