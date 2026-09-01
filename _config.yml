@@ -18,12 +18,12 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Xinyue Liu's Blog # the main title
+title:  Homepage # the main title
 
 tagline: Record what I love # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Xinyue Liu's research blog on Software Engineering, Web Analysis, program analysis, dependency security, programming languages, and Research Tutorials.
+  Blog homepage.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://aaronxyliu.github.io"
