@@ -6,6 +6,8 @@ image:
   path: /assets/img/xinyue-liu-homepage.jpg
   alt: Xinyue Liu, Assistant Professor at Chongqing University (CQU)
 permalink: /
+redirect_from:
+  - /about-me/
 toc: true
 ---
 

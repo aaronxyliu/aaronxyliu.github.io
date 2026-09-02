@@ -47,6 +47,16 @@ jobs:
         env:
           JEKYLL_ENV: "production"
 
+      - name: Verify legacy redirects
+        run: |
+          test -f _site/about-me/index.html
+          ruby -rjson -e '
+            redirects = JSON.parse(File.read("_site/redirects.json"))
+            expected = "https://aaronxyliu.github.io/"
+            actual = redirects["/about-me/"]
+            abort "Expected /about-me/ to redirect to #{expected}, got #{actual.inspect}" unless actual == expected
+          '
+
       - name: Test site
         run: |
           bundle exec htmlproofer _site \
