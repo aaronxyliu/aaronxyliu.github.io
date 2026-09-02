@@ -1,7 +1,7 @@
 ---
 layout: profile-home
-title: Xinyue Liu | Assistant Professor at CQU
-description: Xinyue Liu is an Assistant Professor at Chongqing University (CQU), specializing in AI-assisted Software Engineering and Web Analysis. Explore his Blog.
+title: Profile
+description: Xinyue Liu is an Assistant Professor at Chongqing University researching AI-assisted software engineering, program analysis, and web security.
 image:
   path: /assets/img/xinyue-liu-homepage.jpg
   alt: Xinyue Liu, Assistant Professor at Chongqing University (CQU)
