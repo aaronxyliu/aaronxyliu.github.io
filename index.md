@@ -353,7 +353,7 @@ toc: true
   <div class="about-kicker">SOFTWARE ENGINEERING · PROGRAMMING LANGUAGES</div>
   <h1 data-toc-skip>Xinyue Liu <small>刘心悦</small></h1>
   <div class="about-role">Assistant Professor · Chongqing University</div>
-  <p>I am an assistant professor (弘深青年教师) in the School of Big Data &amp; Software Engineering at <strong>Chongqing University (CQU, 重庆大学)</strong>. I am currently a member of the Intelligent Software Engineering research team led by <a href="https://sites.google.com/site/hongyujohn">Hongyu Zhang (张洪宇)</a>.</p>
+  <p>I am an assistant professor (弘深青年教师) in the School of Big Data &amp; Software Engineering at <strong>Chongqing University (CQU, 重庆大学)</strong>. I am currently a member of the Intelligent Software Engineering research team led by <a href="https://sites.google.com/site/hongyujohn">Hongyu Zhang (张洪宇)</a>, Dean of the School.</p>
   <p>For visitors, my office is on the CQU Huxi Campus: <strong>重庆大学虎溪校区信息技术科研楼 B707</strong>.</p>
   <p>Before joining CQU, I completed my Ph.D. at the University at Buffalo under the supervision of <a href="https://cse.buffalo.edu/~lziarek/">Lukasz Ziarek</a>.</p>
   <div class="about-actions">
@@ -367,7 +367,7 @@ toc: true
 
 ## Research
 
-My research lies at the intersection of **Software Engineering** and **Programming Language Theory**. I am currently interested in AI-assisted analysis and verification of Web applications, especially dependency security in the Web ecosystem. More broadly, I study how program analysis can make software development and maintenance more reliable.
+My research lies at the intersection of **Software Engineering** and **Programming Language Theory**. I am currently interested in AI-assisted analysis and verification of Web applications, especially dependency security in the Web ecosystem. More broadly, I study how AI and program analysis can make software development and maintenance more reliable.
 
 <div class="research-tags">
   <span>Program Analysis</span>
@@ -377,7 +377,10 @@ My research lies at the intersection of **Software Engineering** and **Programmi
   <span>AI for Software Engineering</span>
 </div>
 
-I welcome conversations about academic collaboration, student advising, and industrial cooperation. If our interests overlap, feel free to contact me at aaronxyliu@cqu.edu.cn.
+I welcome students driven by curiosity, particularly those eager to make meaningful contributions at the frontiers of human knowledge. This is the place where you can take on challenging problems and gain top-tier publications. If you have a solid programming background with research interests aligned with mine, feel free to contact me at aaronxyliu@cqu.edu.cn.
+
+> For **Pakistani** students, welcome to reach out if your undergraduate university is one of the following: NUST, FAST-NUCES, COMSATS, LUMS, GIKI, ITU, University of the Punjab, UET, Habib University, or a university with equivalent prestige.
+{: .prompt-tip}
 
 ## From the Blog · 博客导读
 
