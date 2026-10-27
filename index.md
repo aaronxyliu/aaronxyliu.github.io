@@ -15,7 +15,6 @@ toc: true
   .about-hero,
   .featured-reading,
   .reading-card,
-  .student-card,
   .grant-item,
   .publication-item {
     border: 1px solid var(--btn-border-color);
@@ -205,33 +204,111 @@ toc: true
     color: var(--text-muted-color);
   }
 
-  .student-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.85rem;
-    margin: 1rem 0 2rem;
+  .student-intro {
+    margin-bottom: 0.45rem;
   }
 
-  .student-card {
-    padding: 1rem 1.1rem;
-    border-radius: 9px;
+  .student-group {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
   }
 
-  .student-name {
-    display: block;
-    margin-bottom: 0.2rem;
-    color: var(--heading-color);
+  .student-group:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+  }
+
+  .student-group + h2 {
+    margin-top: 1.5rem !important;
+  }
+
+  .content .student-group-title {
+    margin: 0.65rem 0 0.35rem !important;
+    color: var(--link-color);
+    font-size: 0.95rem;
     font-weight: 600;
   }
 
-  .student-role,
+  .content .student-list {
+    display: grid;
+    width: 100%;
+    gap: 0.4rem;
+    margin: 0 0 0.65rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .student-row {
+    display: grid;
+    grid-template-columns: 11rem minmax(0, 1fr);
+    align-items: center;
+    gap: 0.2rem 0.75rem;
+    margin: 0;
+    padding: 0.5rem 0.65rem;
+    border: 1px solid var(--btn-border-color);
+    border-left: 2px solid var(--link-color);
+    border-radius: 7px;
+    background: var(--card-bg);
+    font-size: 0.98rem;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  .student-row:hover {
+    background: linear-gradient(rgba(42, 64, 142, 0.07), rgba(42, 64, 142, 0.07)), var(--card-bg);
+  }
+
+  .student-name {
+    color: var(--heading-color);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .student-name-local {
+    margin-left: 0.3rem;
+    color: var(--text-muted-color);
+    font-size: 0.92rem;
+    font-weight: 400;
+  }
+
+  .student-institution,
+  .student-period {
+    color: var(--text-muted-color);
+    white-space: nowrap;
+  }
+
+  .student-institution {
+    display: inline-flex;
+    justify-self: end;
+    align-items: baseline;
+    gap: 0.35rem;
+    text-align: right;
+  }
+
+  .student-institution-name {
+    color: #000;
+  }
+
+  html[data-bs-theme='dark'] .student-institution-name {
+    color: var(--heading-color);
+  }
+
+  .student-period {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .student-period time {
+    font: inherit;
+    vertical-align: baseline;
+  }
+
   .grant-meta,
   .grant-title-en {
     color: var(--text-muted-color);
-  }
-
-  .student-role {
-    font-size: 0.88rem;
   }
 
   .grant-list {
@@ -321,6 +398,15 @@ toc: true
   }
 
   @media (max-width: 576px) {
+    .student-row {
+      grid-template-columns: minmax(0, 1fr) max-content;
+      gap: 0.25rem 0.75rem;
+    }
+
+    .student-name {
+      white-space: normal;
+    }
+
     .about-hero {
       padding: 1.35rem;
     }
@@ -333,7 +419,6 @@ toc: true
       grid-template-columns: 1fr;
     }
 
-    .student-grid,
     .grant-item {
       grid-template-columns: 1fr;
     }
@@ -504,22 +589,39 @@ I welcome students driven by curiosity, particularly those eager to make meaning
 
 ## Students
 
-I'm glad to guide the following talented students:
+<p class="student-intro">I'm glad to guide the following talented students:</p>
 
-<div class="student-grid">
-  <div class="student-card">
-    <span class="student-name">Kesen Wang (王柯森) </span>
-    <span class="student-role">M.S. Student</span>
-  </div>
-  <div class="student-card">
-    <span class="student-name">Hufang Wang (王琥方) </span>
-    <span class="student-role">M.S. Student</span>
-  </div>
-  <div class="student-card">
-    <span class="student-name">Zhaofeng Li (李兆丰) </span>
-    <span class="student-role">Undergraduate Student</span>
-  </div>
-</div>
+<section class="student-group" aria-labelledby="students-masters" tabindex="0">
+  <h3 class="student-group-title" id="students-masters">M.S. Students</h3>
+  <ul class="student-list">
+    <li class="student-row">
+      <strong class="student-name">Kesen Wang <span class="student-name-local" lang="zh-CN">王柯森</span></strong>
+      <span class="student-institution">from <span class="student-institution-name">Chongqing Technology and Business University</span></span>
+      <span class="student-period"><time datetime="2025-11">2025.11</time> &ndash; current</span>
+    </li>
+    <li class="student-row">
+      <strong class="student-name">Hufang Wang <span class="student-name-local" lang="zh-CN">王琥方</span></strong>
+      <span class="student-institution">from <span class="student-institution-name">Henan University</span></span>
+      <span class="student-period"><time datetime="2026-09">2026.9</time> &ndash; current</span>
+    </li>
+  </ul>
+</section>
+
+<section class="student-group" aria-labelledby="students-undergraduates" tabindex="0">
+  <h3 class="student-group-title" id="students-undergraduates">Undergraduate Students</h3>
+  <ul class="student-list">
+    <li class="student-row">
+      <strong class="student-name">Zhaofeng Li <span class="student-name-local" lang="zh-CN">李兆丰</span></strong>
+      <span class="student-institution">from <span class="student-institution-name">Chongqing University</span></span>
+      <span class="student-period"><time datetime="2026-03">2026.3</time> &ndash; current</span>
+    </li>
+    <li class="student-row">
+      <strong class="student-name">Junjie Tan <span class="student-name-local" lang="zh-CN">谭俊杰</span></strong>
+      <span class="student-institution">from <span class="student-institution-name">Chongqing University</span></span>
+      <span class="student-period"><time datetime="2026-10">2026.10</time> &ndash; current</span>
+    </li>
+  </ul>
+</section>
 
 ## Grants
 
