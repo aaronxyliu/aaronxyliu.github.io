@@ -12,6 +12,62 @@
 {%- endif -%}
 ';
 
+/* Paired translations use ordinary links, so switching also works without JS. */
+.post-language-switcher {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  gap: 0.25rem;
+  margin: 0 auto 1.5rem;
+  padding: 0.3rem;
+  border: 1px solid var(--btn-border-color);
+  border-radius: 999px;
+  background: var(--btn-paginator-hover-color);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+
+  .language-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5.5rem;
+    min-height: 2.5rem;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    color: var(--text-muted-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  a:hover,
+  a:focus-visible {
+    background: var(--card-bg);
+    color: var(--link-color);
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+  }
+
+  .active {
+    background: var(--card-bg);
+    color: var(--link-color);
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+  }
+}
+
+/* Long translated formulas scroll within the article on narrow screens. */
+.bilingual-post .content mjx-container[display='true'] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.15rem;
+}
+
 /* Series guide cards shared by all reading maps. */
 .series-map {
   display: grid;

@@ -1,0 +1,6 @@
+{% if page.translation_key %}
+  {% assign language_alternates = site.posts | where: 'translation_key', page.translation_key %}
+  {% for alternate in language_alternates %}
+    <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.url | absolute_url }}">
+  {% endfor %}
+{% endif %}

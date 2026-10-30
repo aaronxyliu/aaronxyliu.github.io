@@ -1,0 +1,33 @@
+<!-- Use a series' reading order when specified; otherwise keep chronological navigation. -->
+{% assign previous_post = page.previous %}
+{% assign next_post = page.next %}
+{% if page.series_navigation %}
+  {% assign previous_post = site.posts | where: 'url', page.series_navigation.previous | first %}
+  {% assign next_post = site.posts | where: 'url', page.series_navigation.next | first %}
+{% endif %}
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="{% if page.series_navigation and include.lang == 'zh-CN' %}系列文章导航{% elsif page.series_navigation %}Series navigation{% else %}Post Navigation{% endif %}">
+  {% assign previous_label = site.data.locales[include.lang].post.button.previous %}
+  {% assign next_label = site.data.locales[include.lang].post.button.next %}
+  {% if page.series_navigation and include.lang == 'en' %}
+    {% assign previous_label = 'Previous in series' %}
+    {% assign next_label = 'Next in series' %}
+  {% endif %}
+
+  {% if previous_post.url %}
+    <a href="{{ previous_post.url | relative_url }}" class="btn btn-outline-primary" aria-label="{{ previous_label }}">
+      <p>{{ previous_post.title }}</p>
+    </a>
+  {% else %}
+    <div class="btn btn-outline-primary disabled" aria-label="{{ previous_label }}"><p>-</p></div>
+  {% endif %}
+
+  {% if next_post.url %}
+    {% assign next_title = page.series_navigation.next_title | default: next_post.title %}
+    <a href="{{ next_post.url | relative_url }}" class="btn btn-outline-primary" aria-label="{{ next_label }}">
+      <p>{{ next_title }}</p>
+    </a>
+  {% else %}
+    <div class="btn btn-outline-primary disabled" aria-label="{{ next_label }}"><p>-</p></div>
+  {% endif %}
+</nav>

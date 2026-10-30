@@ -1,5 +1,10 @@
 ---
 title: 软件工程形式化入门（三）：不用记住每个值——从具体状态走向抽象解释
+lang: zh-CN
+translation_key: formalization-3
+series_navigation:
+  previous: /posts/Formalization2/
+  next: /posts/Formalization4/
 date: "2026-08-17 13:30:00 +0800"
 description: "无法枚举程序的每一个具体状态时，分析器如何继续工作？用符号抽象、格和合并操作抓住真正重要的信息。"
 math: true

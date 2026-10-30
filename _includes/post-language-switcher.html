@@ -1,0 +1,19 @@
+{% if page.translation_key %}
+  {% assign translations = site.posts | where: 'translation_key', page.translation_key | sort: 'lang' | reverse %}
+  {% if translations.size > 1 %}
+    <nav class="post-language-switcher" aria-label="{% if page.lang == 'zh-CN' %}文章语言{% else %}Article language{% endif %}">
+      {% for translation in translations %}
+        {% case translation.lang %}
+          {% when 'zh-CN' %}{% assign language_label = '中文' %}
+          {% when 'en' %}{% assign language_label = 'English' %}
+          {% else %}{% assign language_label = translation.lang %}
+        {% endcase %}
+        {% if translation.url == page.url %}
+          <span class="language-option active" lang="{{ translation.lang }}" aria-current="page">{{ language_label }}</span>
+        {% else %}
+          <a class="language-option" href="{{ translation.url | relative_url }}" lang="{{ translation.lang }}" hreflang="{{ translation.lang }}" rel="alternate">{{ language_label }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  {% endif %}
+{% endif %}

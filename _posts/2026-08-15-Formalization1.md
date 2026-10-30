@@ -1,5 +1,10 @@
 ---
 title: 软件工程形式化入门（一）：别怕公式——从集合、映射读懂程序状态
+lang: zh-CN
+translation_key: formalization-1
+series_navigation:
+  previous: /posts/Formalization-guide/
+  next: /posts/Formalization2/
 date: "2026-08-15 13:13:00 +0800"
 description: "论文里的集合、箭头和希腊字母总让你卡住？从程序状态出发，学会把形式化定义重新读成熟悉的程序概念。"
 math: true

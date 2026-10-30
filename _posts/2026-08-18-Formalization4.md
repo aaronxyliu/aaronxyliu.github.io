@@ -1,5 +1,10 @@
 ---
 title: 软件工程形式化入门（四）：分析器为什么会停下来？从 Transfer Function 到不动点
+lang: zh-CN
+translation_key: formalization-4
+series_navigation:
+  previous: /posts/Formalization3/
+  next: /posts/Formalization5/
 date: "2026-08-18 14:00:00 +0800"
 description: "循环会反复产生新状态，静态分析为什么仍能停下来？从传递函数、工作列表到不动点，看懂分析器的运转方式。"
 math: true

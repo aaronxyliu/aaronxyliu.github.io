@@ -125,9 +125,32 @@ toc: true
   .reading-links {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     margin-top: 1rem;
     font-size: 0.92rem;
+  }
+
+  .reading-links .reading-language-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--btn-border-color);
+    border-radius: 999px;
+    background: var(--btn-paginator-hover-color);
+    color: var(--link-color);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .reading-links .reading-language-link:hover {
+    border-color: var(--link-color);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
+  }
+
+  .reading-links .reading-language-link:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
   }
 
   .reading-grid {
@@ -280,14 +303,28 @@ toc: true
 
   .student-institution {
     display: inline-flex;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    /* A shared width aligns the labels while anchoring each block to the right. */
+    width: 22rem;
+    max-width: 100%;
     justify-self: end;
-    align-items: baseline;
+    align-items: center;
     gap: 0.35rem;
-    text-align: right;
+    text-align: left;
   }
 
   .student-institution-name {
+    min-width: 0;
+    margin-left: auto;
     color: #000;
+    text-align: right;
+    white-space: normal;
+  }
+
+  .student-country {
+    display: block;
+    color: var(--text-muted-color);
   }
 
   html[data-bs-theme='dark'] .student-institution-name {
@@ -295,7 +332,7 @@ toc: true
   }
 
   .student-period {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-row: 2;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
@@ -399,7 +436,7 @@ toc: true
 
   @media (max-width: 576px) {
     .student-row {
-      grid-template-columns: minmax(0, 1fr) max-content;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
       gap: 0.25rem 0.75rem;
     }
 
@@ -464,47 +501,48 @@ My research lies at the intersection of **Software Engineering** and **Programmi
 
 I welcome students driven by curiosity, particularly those eager to make meaningful contributions at the frontiers of human knowledge. This is the place where you can take on challenging problems and gain top-tier publications. If you have a solid programming background with research interests aligned with mine, feel free to contact me at aaronxyliu@cqu.edu.cn.
 
-> For **Pakistani** students, welcome to reach out if your undergraduate university is one of the following: NUST, FAST-NUCES, COMSATS, LUMS, GIKI, ITU, University of the Punjab, UET, Habib University, or a university with equivalent prestige.
+> For **Pakistani** students, welcome to reach out if your undergraduate university is one of the following: NUST, COMSATS, UET Lahore, PU, LUMS, QAU, FAST_NUCES or a university with equivalent prestige.
 {: .prompt-tip}
 
-## From the Blog · 博客导读
+## From the Blog
 
-这个博客不仅记录研究与技术笔记，也尝试把程序分析、程序语言理论和科研写作中那些“不容易找到入口”的内容，整理成可以连续阅读的系列。内容主要面向刚进入相关方向的本科生、研究生与软件分析爱好者：不追求一次讲完所有知识，而是希望帮助读者建立继续阅读论文和教材所需要的直觉。
+Alongside research and technical notes, this blog offers guided series on program analysis, programming language theory, and academic writing. The series use examples to help students and other newcomers build the intuition needed to read papers and textbooks.
 
 <div class="featured-reading">
-  <div class="reading-label">RECOMMENDED · 中文 · 7 篇</div>
-  <h3 data-toc-skip>软件工程形式化入门</h3>
-  <p>想读懂程序分析论文，又不知道该从哪里补起？这个系列准备了一条不绕远路的入门路线，帮你逐渐建立阅读定义、规则与分析结论的直觉；最后还附有一篇轻松的 <a href="{{ '/posts/Formalization7/' | relative_url }}">形式化历史故事</a>。</p>
+  <div class="reading-label">RECOMMENDED · 7 ARTICLES</div>
+  <h3 data-toc-skip>Formalization in Software Engineering</h3>
+  <p>New to program analysis papers? Start with sets and program states, then work through semantic rules, abstraction, and the guarantees an analysis can provide. A final article traces the <a href="{{ '/posts/Formalization7-en/' | relative_url }}">history of formal methods</a>.</p>
   <div class="reading-links">
-    <a href="{{ '/posts/Formalization1/' | relative_url }}">从第一篇开始 →</a>
-    <a href="{{ '/posts/Formalization-guide/' | relative_url }}">查看完整系列</a>
+    <a href="{{ '/posts/Formalization1-en/' | relative_url }}">Start with Part 1 →</a>
+    <a href="{{ '/posts/Formalization-guide-en/' | relative_url }}">Explore the series</a>
+    <a class="reading-language-link" href="{{ '/posts/Formalization-guide/' | relative_url }}" lang="zh-CN" hreflang="zh-CN">点此阅读中文版</a>
   </div>
 </div>
 
 <div class="reading-grid">
   <a class="reading-card" href="{{ '/posts/programming-language-guide/' | relative_url }}">
-    <span class="reading-count">11 篇 · 入门路线</span>
+    <span class="reading-count">11 articles · Foundations</span>
     <h3 data-toc-skip>Easy Foundations for Programming Languages</h3>
-    <p>从基础概念进入程序语言理论，适合希望系统补充 PL 基础的读者。</p>
+    <p>Build a foundation in programming language theory, starting with the basic concepts.</p>
   </a>
   <a class="reading-card" href="{{ '/posts/denotational-semantics-guide/' | relative_url }}">
-    <span class="reading-count">5 篇 · 进阶专题</span>
+    <span class="reading-count">5 articles · Advanced topics</span>
     <h3 data-toc-skip>Denotational Semantics of Typed Lambda Calculus</h3>
-    <p>围绕类型化 λ 演算的指称语义，进一步理解程序如何映射到数学模型。</p>
+    <p>Study mathematical models of typed lambda calculus and how they give meaning to programs.</p>
   </a>
   <a class="reading-card" href="{{ '/posts/randomized-algorithms-guide/' | relative_url }}">
-    <span class="reading-count">12 篇 · 算法基础</span>
+    <span class="reading-count">12 articles · Algorithms</span>
     <h3 data-toc-skip>Randomized Algorithms</h3>
-    <p>从概率工具到经典随机算法，整理分析思路与常见证明方法。</p>
+    <p>Learn probabilistic tools, classic randomized algorithms, and the reasoning used to analyze them.</p>
   </a>
   <a class="reading-card" href="{{ '/posts/academic-writing-guide/' | relative_url }}">
-    <span class="reading-count">3 篇 · 科研训练</span>
+    <span class="reading-count">3 articles · Research skills</span>
     <h3 data-toc-skip>Academic Writing</h3>
-    <p>讨论如何思考研究问题、组织论文结构，以及让技术写作更清楚。</p>
+    <p>Develop research questions, organize a paper, and make technical writing clearer.</p>
   </a>
 </div>
 
-> 如果你刚开始接触软件分析，可以先读“软件工程形式化入门”，再根据兴趣进入 *Easy Foundations for Programming Languages*。如果已经熟悉基础语义与类型系统，可以直接选择指称语义专题。
+> If you are new to software analysis, begin with *Formalization in Software Engineering*, then turn to *Easy Foundations for Programming Languages*. If you already know basic semantics and type systems, you can start with the denotational semantics series.
 {: .prompt-tip}
 
 ## Experience
@@ -596,13 +634,28 @@ I welcome students driven by curiosity, particularly those eager to make meaning
   <ul class="student-list">
     <li class="student-row">
       <strong class="student-name">Kesen Wang <span class="student-name-local" lang="zh-CN">王柯森</span></strong>
-      <span class="student-institution">from <span class="student-institution-name">Chongqing Technology and Business University</span></span>
+      <span class="student-institution">from <span class="student-institution-name">Chongqing Technology and Business University<span class="student-country">China</span></span></span>
       <span class="student-period"><time datetime="2025-11">2025.11</time> &ndash; current</span>
     </li>
     <li class="student-row">
       <strong class="student-name">Hufang Wang <span class="student-name-local" lang="zh-CN">王琥方</span></strong>
-      <span class="student-institution">from <span class="student-institution-name">Henan University</span></span>
+      <span class="student-institution">from <span class="student-institution-name">Henan University<span class="student-country">China</span></span></span>
       <span class="student-period"><time datetime="2026-09">2026.9</time> &ndash; current</span>
+    </li>
+    <li class="student-row">
+      <strong class="student-name">Ahmad Hurayarah</strong>
+      <span class="student-institution">from <span class="student-institution-name">COMSATS University Islamabad<span class="student-country">Pakistan</span></span></span>
+      <span class="student-period">Starts <time datetime="2027-09">2027.9</time></span>
+    </li>
+    <li class="student-row">
+      <strong class="student-name">Abu Bakar</strong>
+      <span class="student-institution">from <span class="student-institution-name">University of the Punjab<span class="student-country">Pakistan</span></span></span>
+      <span class="student-period">Starts <time datetime="2027-09">2027.9</time></span>
+    </li>
+    <li class="student-row">
+      <strong class="student-name">Zeeshan Hyder</strong>
+      <span class="student-institution">from <span class="student-institution-name">Sukkur IBA University<span class="student-country">Pakistan</span></span></span>
+      <span class="student-period">Starts <time datetime="2027-09">2027.9</time></span>
     </li>
   </ul>
 </section>
@@ -612,12 +665,12 @@ I welcome students driven by curiosity, particularly those eager to make meaning
   <ul class="student-list">
     <li class="student-row">
       <strong class="student-name">Zhaofeng Li <span class="student-name-local" lang="zh-CN">李兆丰</span></strong>
-      <span class="student-institution">from <span class="student-institution-name">Chongqing University</span></span>
+      <span class="student-institution">from <span class="student-institution-name">Chongqing University<span class="student-country">China</span></span></span>
       <span class="student-period"><time datetime="2026-03">2026.3</time> &ndash; current</span>
     </li>
     <li class="student-row">
       <strong class="student-name">Junjie Tan <span class="student-name-local" lang="zh-CN">谭俊杰</span></strong>
-      <span class="student-institution">from <span class="student-institution-name">Chongqing University</span></span>
+      <span class="student-institution">from <span class="student-institution-name">Chongqing University<span class="student-country">China</span></span></span>
       <span class="student-period"><time datetime="2026-10">2026.10</time> &ndash; current</span>
     </li>
   </ul>

@@ -1,5 +1,9 @@
 ---
 title: 软件工程形式化入门（历史篇）：从“什么是计算”到“如何相信程序”
+lang: zh-CN
+translation_key: formalization-7
+series_navigation:
+  previous: /posts/Formalization6/
 date: "2026-08-21 10:00:00 +0800"
 description: "从图灵追问什么是计算，到现代工具验证真实软件：沿着关键人物与思想，重走程序语言形式化近百年的历史。"
 math: true

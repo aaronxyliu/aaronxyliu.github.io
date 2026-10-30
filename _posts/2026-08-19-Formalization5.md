@@ -1,5 +1,10 @@
 ---
 title: 软件工程形式化入门（五）：准确、快速，还是可靠？静态分析的工程取舍
+lang: zh-CN
+translation_key: formalization-5
+series_navigation:
+  previous: /posts/Formalization4/
+  next: /posts/Formalization6/
 date: "2026-08-19 14:30:00 +0800"
 description: "静态分析不可能同时拥有绝对准确、极致速度和无限规模。读懂可靠性、精度与工程成本之间真正的取舍。"
 math: true

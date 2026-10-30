@@ -1,5 +1,9 @@
 ---
 title: 软件工程形式化入门系列
+lang: zh-CN
+translation_key: formalization-guide
+series_navigation:
+  next: /posts/Formalization1/
 date: "2026-08-14 10:00:00 +0800"
 pin: true
 description: 一份写给研究生和软件分析爱好者的形式化阅读地图，帮助你跨过程序分析论文中定义与公式的门槛。
