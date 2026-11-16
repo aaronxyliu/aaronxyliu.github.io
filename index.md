@@ -501,7 +501,7 @@ My research lies at the intersection of **Software Engineering** and **Programmi
 
 I welcome students driven by curiosity, particularly those eager to make meaningful contributions at the frontiers of human knowledge. This is the place where you can take on challenging problems and gain top-tier publications. If you have a solid programming background with research interests aligned with mine, feel free to contact me at aaronxyliu@cqu.edu.cn.
 
-> Our group currently have two openings for international **PhD** students in our group. Interested candidates are welcome to contact me. Requirement: at least one first-author paper at a CCF-B (or higher) conference.
+> We currently have **two PhD positions** available for international students in our group. Interested candidates are welcome to contact me. Requirement: at least one first-author paper at a CCF-B (or higher) conference.
 {: .prompt-tip}
 
 ## From the Blog
