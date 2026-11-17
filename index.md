@@ -648,6 +648,11 @@ Alongside research and technical notes, this blog offers guided series on progra
       <span class="student-period">Starts <time datetime="2027-09">2027.9</time></span>
     </li>
     <li class="student-row">
+      <strong class="student-name">Achraf Tayeb <span class="student-name-local" lang="zh-CN">李彦</span></strong>
+      <span class="student-institution">from <span class="student-institution-name">Sichuan University<span class="student-country">Morocco</span></span></span>
+      <span class="student-period">Starts <time datetime="2027-09">2027.9</time></span>
+    </li>
+    <li class="student-row">
       <strong class="student-name">Abu Bakar</strong>
       <span class="student-institution">from <span class="student-institution-name">University of the Punjab<span class="student-country">Pakistan</span></span></span>
       <span class="student-period">Starts <time datetime="2027-09">2027.9</time></span>
